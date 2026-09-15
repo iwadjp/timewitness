@@ -1,0 +1,229 @@
+{
+  "version": 2,
+  "runId": "2026-09-15T09-53-19-465Z-31bb5790",
+  "baselineId": "2026-09-15T09-53-19-321Z-db1454d3",
+  "createdAt": "2026-09-15T09:53:19.465Z",
+  "mode": "FULL_WITNESS",
+  "scope": ".",
+  "head": null,
+  "baselineAt": "2026-09-15T09:53:19.321Z",
+  "verdict": "NOT_PROVEN",
+  "reason": "BEFORE_ALSO_PASSES",
+  "repeat": 2,
+  "timeoutMs": 15000,
+  "tests": [
+    "value.test.cjs"
+  ],
+  "changed": [
+    "another.txt",
+    "lib.cjs",
+    "value.test.cjs"
+  ],
+  "witnessedChanges": [
+    "another.txt",
+    "lib.cjs"
+  ],
+  "transplanted": [
+    "value.test.cjs"
+  ],
+  "before": [
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 90.0899000000004,
+      "preparationMs": 4.345100000000002,
+      "verificationMs": 1.1696000000001732,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "f073f88ff5d87ae731b4ceb8370c2222c6c616bfaeeb0270516260a806799e3d",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "e425deca0ce9246bc27c112cbcbac8be35184271a2cde99b5ce4c21aee84aaa8",
+      "tests": [
+        {
+          "id": "value.test.cjs :: 8617005ec7e2c0d2bdb02d8fe2e02b36e1d7d6e7804317a44e9ec77cf4d9d58d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 90.02970000000005,
+      "preparationMs": 2.537100000000464,
+      "verificationMs": 1.3388000000004467,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "f073f88ff5d87ae731b4ceb8370c2222c6c616bfaeeb0270516260a806799e3d",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "e425deca0ce9246bc27c112cbcbac8be35184271a2cde99b5ce4c21aee84aaa8",
+      "tests": [
+        {
+          "id": "value.test.cjs :: 8617005ec7e2c0d2bdb02d8fe2e02b36e1d7d6e7804317a44e9ec77cf4d9d58d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "after": [
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 97.16349999999966,
+      "preparationMs": 4.436499999999796,
+      "verificationMs": 2.0447000000003754,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "f073f88ff5d87ae731b4ceb8370c2222c6c616bfaeeb0270516260a806799e3d",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "e425deca0ce9246bc27c112cbcbac8be35184271a2cde99b5ce4c21aee84aaa8",
+      "tests": [
+        {
+          "id": "value.test.cjs :: 8617005ec7e2c0d2bdb02d8fe2e02b36e1d7d6e7804317a44e9ec77cf4d9d58d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 95.79899999999998,
+      "preparationMs": 4.386800000000221,
+      "verificationMs": 2.0559999999995853,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "f073f88ff5d87ae731b4ceb8370c2222c6c616bfaeeb0270516260a806799e3d",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "e425deca0ce9246bc27c112cbcbac8be35184271a2cde99b5ce4c21aee84aaa8",
+      "tests": [
+        {
+          "id": "value.test.cjs :: 8617005ec7e2c0d2bdb02d8fe2e02b36e1d7d6e7804317a44e9ec77cf4d9d58d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "environment": {
+    "state": "EXISTING_ENV",
+    "kind": "NODE_BUILTINS_ONLY",
+    "manifestHashes": {},
+    "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 0,
+    "count": 0,
+    "reasons": [],
+    "runtime": {
+      "node": "v24.15.0",
+      "platform": "win32",
+      "arch": "x64",
+      "nodeSha256": "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+      "reporterSha256": "47d2b2b4178bb574d01c419f52faa3f0f0d32b0f535e85b5300e24daa1a5c201"
+    },
+    "policy": "ALLOWLIST_NO_PARENT_TEST_CONTEXT_OR_LOADERS",
+    "cwd": "SAME_ABSOLUTE_SANDBOX_PATH_EVERY_RUN",
+    "lockfileSame": true,
+    "dependencySame": true,
+    "commandSame": true,
+    "command": [
+      "node",
+      "--test",
+      "--test-isolation=none",
+      "--test-concurrency=1",
+      "--test-timeout=15000",
+      "--test-reporter=<timewitness-reporter-file-url>",
+      "./value.test.cjs"
+    ],
+    "fingerprint": "f073f88ff5d87ae731b4ceb8370c2222c6c616bfaeeb0270516260a806799e3d",
+    "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+    "cwdFingerprint": "e425deca0ce9246bc27c112cbcbac8be35184271a2cde99b5ce4c21aee84aaa8",
+    "testBytes": {
+      "value.test.cjs": "c031dfd064a401a81a264fbfa3181dbc4189192a328422b4dcc94c37ebbadfa1"
+    }
+  },
+  "safety": {
+    "gitStateUnchanged": true,
+    "capturedSourceUnchanged": true,
+    "dependencyUnchanged": true,
+    "runtimeUnchanged": true
+  },
+  "timings": {
+    "archivalMs": 4.607399999998961,
+    "armMs": 518.406,
+    "sandboxPreparationMs": 15.705500000000484,
+    "beforeTestMs": 180.11960000000045,
+    "afterTestMs": 192.96249999999964,
+    "inputVerificationMs": 6.609100000000581,
+    "cleanupMs": 0,
+    "cleanupPolicy": "RETAIN_NO_DELETION",
+    "proveMs": 1532.7314999999999,
+    "overheadMs": 1159.6493999999998,
+    "reportWriteMs": 2.540899999999965,
+    "totalMs": 1535.2768000000005
+  },
+  "privacy": {
+    "rawLogsSaved": false,
+    "testNames": "HMAC",
+    "environmentValuesSaved": false,
+    "sourceInReport": false,
+    "snapshots": "PRIVATE_LOCAL_SOURCE_COPIES_RETAINED",
+    "networkByTimewitness": false
+  },
+  "evidencePath": "runs/2026-09-15T09-53-19-465Z-31bb5790/report.json",
+  "currentHashes": {
+    "another.txt": {
+      "sha256": "61178797452155f10913861587fcc348813ba3cf7f4c7bc91715d150c02eebf1",
+      "mode": 438
+    },
+    "lib.cjs": {
+      "sha256": "44e0c9e7ead985db9872e03b59c7fe0b6dc14165cf0d9c5d6d72ed4dac4b5f32",
+      "mode": 438
+    },
+    "unrelated.txt": {
+      "sha256": "cbcc1b67854c29bd70c93ca838383356c04fd68df494dec8f2f857556fbb83fe",
+      "mode": 438
+    },
+    "value.test.cjs": {
+      "sha256": "c031dfd064a401a81a264fbfa3181dbc4189192a328422b4dcc94c37ebbadfa1",
+      "mode": 438
+    }
+  },
+  "omitted": []
+}

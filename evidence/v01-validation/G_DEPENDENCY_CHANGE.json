@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "runId": "2026-09-15T09-53-33-185Z-def18330",
+  "baselineId": "2026-09-15T09-53-33-035Z-f9a94ac1",
+  "createdAt": "2026-09-15T09:53:33.186Z",
+  "mode": "FULL_WITNESS",
+  "scope": ".",
+  "head": null,
+  "baselineAt": "2026-09-15T09:53:33.035Z",
+  "verdict": "INCONCLUSIVE",
+  "reason": "DEPENDENCY_OR_MANIFEST_CHANGED_OR_UNAVAILABLE",
+  "repeat": 2,
+  "timeoutMs": 15000,
+  "tests": [
+    "value.test.cjs"
+  ],
+  "changed": [
+    "another.txt",
+    "lib.cjs",
+    "package-lock.json",
+    "value.test.cjs"
+  ],
+  "witnessedChanges": [],
+  "transplanted": [],
+  "before": [],
+  "after": [],
+  "environment": {
+    "state": "ENVIRONMENT_NOT_REPRODUCED",
+    "kind": "NODE_BUILTINS_ONLY",
+    "manifestHashes": {
+      "package-lock.json": "e7ff7c68a0898146888dca2ac469f37413efe27b8a0718034bc2664ce6e13fa5"
+    },
+    "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 0,
+    "count": 0,
+    "reasons": [],
+    "runtime": {
+      "node": "v24.15.0",
+      "platform": "win32",
+      "arch": "x64",
+      "nodeSha256": "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+      "reporterSha256": "47d2b2b4178bb574d01c419f52faa3f0f0d32b0f535e85b5300e24daa1a5c201"
+    },
+    "policy": "ALLOWLIST_NO_PARENT_TEST_CONTEXT_OR_LOADERS",
+    "cwd": "SAME_ABSOLUTE_SANDBOX_PATH_EVERY_RUN",
+    "lockfileSame": false,
+    "dependencySame": true,
+    "commandSame": true,
+    "command": [
+      "node",
+      "--test",
+      "--test-isolation=none",
+      "--test-concurrency=1",
+      "--test-timeout=15000",
+      "--test-reporter=<timewitness-reporter-file-url>",
+      "./value.test.cjs"
+    ]
+  },
+  "safety": {},
+  "timings": {
+    "armMs": 491.1691000000028,
+    "sandboxPreparationMs": 0,
+    "beforeTestMs": 0,
+    "afterTestMs": 0,
+    "inputVerificationMs": 0,
+    "cleanupMs": 0,
+    "cleanupPolicy": "RETAIN_NO_DELETION",
+    "proveMs": 446.49519999999757,
+    "overheadMs": 446.49519999999757,
+    "reportWriteMs": 0.992500000000291,
+    "totalMs": 447.4997999999978
+  },
+  "privacy": {
+    "rawLogsSaved": false,
+    "testNames": "HMAC",
+    "environmentValuesSaved": false,
+    "sourceInReport": false,
+    "snapshots": "PRIVATE_LOCAL_SOURCE_COPIES_RETAINED",
+    "networkByTimewitness": false
+  },
+  "evidencePath": "runs/2026-09-15T09-53-33-185Z-def18330/report.json",
+  "currentHashes": {
+    "another.txt": {
+      "sha256": "61178797452155f10913861587fcc348813ba3cf7f4c7bc91715d150c02eebf1",
+      "mode": 438
+    },
+    "lib.cjs": {
+      "sha256": "44e0c9e7ead985db9872e03b59c7fe0b6dc14165cf0d9c5d6d72ed4dac4b5f32",
+      "mode": 438
+    },
+    "package-lock.json": {
+      "sha256": "e7ff7c68a0898146888dca2ac469f37413efe27b8a0718034bc2664ce6e13fa5",
+      "mode": 438
+    },
+    "unrelated.txt": {
+      "sha256": "cbcc1b67854c29bd70c93ca838383356c04fd68df494dec8f2f857556fbb83fe",
+      "mode": 438
+    },
+    "value.test.cjs": {
+      "sha256": "feaefec17366df35261ed278d9ba954dc7e9269117756970c7d4e29977b7f28d",
+      "mode": 438
+    }
+  },
+  "omitted": []
+}

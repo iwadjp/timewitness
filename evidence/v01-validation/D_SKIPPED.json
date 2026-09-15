@@ -1,0 +1,261 @@
+{
+  "version": 2,
+  "runId": "2026-09-15T09-53-24-249Z-3b02655b",
+  "baselineId": "2026-09-15T09-53-24-003Z-141d4466",
+  "createdAt": "2026-09-15T09:53:24.250Z",
+  "mode": "FULL_WITNESS",
+  "scope": ".",
+  "head": null,
+  "baselineAt": "2026-09-15T09:53:24.003Z",
+  "verdict": "INCONCLUSIVE",
+  "reason": "EXECUTION_INCONCLUSIVE",
+  "repeat": 2,
+  "timeoutMs": 15000,
+  "tests": [
+    "value.test.cjs"
+  ],
+  "changed": [
+    "another.txt",
+    "lib.cjs",
+    "value.test.cjs"
+  ],
+  "witnessedChanges": [
+    "another.txt",
+    "lib.cjs"
+  ],
+  "transplanted": [
+    "value.test.cjs"
+  ],
+  "before": [
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 96.48880000000099,
+      "preparationMs": 4.670900000000984,
+      "verificationMs": 1.24120000000039,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "SKIP_OR_TODO"
+      ],
+      "environmentFingerprint": "98dbdde2cc5a8f20af8484a694cbb614ef34a6faf9ae80a68d4521f1b35d6206",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "e58d6addf01df1219eb0615327fd4cc72f58d61736842e6c9ea052f65305265e",
+      "tests": [
+        {
+          "id": "value.test.cjs :: ad6cabf2ccb8033eeee1aac1ebccddafd427d2ed5ee3185af22d22d256bc26ad",
+          "passed": false,
+          "skip": true,
+          "todo": false
+        },
+        {
+          "id": "value.test.cjs :: 8d62d63debc619851f24a8532f61e87727738a447c98eac6a30f32e6068eca75",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 97.49380000000019,
+      "preparationMs": 4.381999999999607,
+      "verificationMs": 1.1591000000007625,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "SKIP_OR_TODO"
+      ],
+      "environmentFingerprint": "98dbdde2cc5a8f20af8484a694cbb614ef34a6faf9ae80a68d4521f1b35d6206",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "e58d6addf01df1219eb0615327fd4cc72f58d61736842e6c9ea052f65305265e",
+      "tests": [
+        {
+          "id": "value.test.cjs :: ad6cabf2ccb8033eeee1aac1ebccddafd427d2ed5ee3185af22d22d256bc26ad",
+          "passed": false,
+          "skip": true,
+          "todo": false
+        },
+        {
+          "id": "value.test.cjs :: 8d62d63debc619851f24a8532f61e87727738a447c98eac6a30f32e6068eca75",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "after": [
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 104.08189999999922,
+      "preparationMs": 4.371100000000297,
+      "verificationMs": 2.0257000000001426,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "SKIP_OR_TODO"
+      ],
+      "environmentFingerprint": "98dbdde2cc5a8f20af8484a694cbb614ef34a6faf9ae80a68d4521f1b35d6206",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "e58d6addf01df1219eb0615327fd4cc72f58d61736842e6c9ea052f65305265e",
+      "tests": [
+        {
+          "id": "value.test.cjs :: ad6cabf2ccb8033eeee1aac1ebccddafd427d2ed5ee3185af22d22d256bc26ad",
+          "passed": false,
+          "skip": true,
+          "todo": false
+        },
+        {
+          "id": "value.test.cjs :: 8d62d63debc619851f24a8532f61e87727738a447c98eac6a30f32e6068eca75",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 97.91150000000016,
+      "preparationMs": 4.596499999999651,
+      "verificationMs": 2.0882999999994354,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "SKIP_OR_TODO"
+      ],
+      "environmentFingerprint": "98dbdde2cc5a8f20af8484a694cbb614ef34a6faf9ae80a68d4521f1b35d6206",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "e58d6addf01df1219eb0615327fd4cc72f58d61736842e6c9ea052f65305265e",
+      "tests": [
+        {
+          "id": "value.test.cjs :: ad6cabf2ccb8033eeee1aac1ebccddafd427d2ed5ee3185af22d22d256bc26ad",
+          "passed": false,
+          "skip": true,
+          "todo": false
+        },
+        {
+          "id": "value.test.cjs :: 8d62d63debc619851f24a8532f61e87727738a447c98eac6a30f32e6068eca75",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "environment": {
+    "state": "EXISTING_ENV",
+    "kind": "NODE_BUILTINS_ONLY",
+    "manifestHashes": {},
+    "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 0,
+    "count": 0,
+    "reasons": [],
+    "runtime": {
+      "node": "v24.15.0",
+      "platform": "win32",
+      "arch": "x64",
+      "nodeSha256": "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+      "reporterSha256": "47d2b2b4178bb574d01c419f52faa3f0f0d32b0f535e85b5300e24daa1a5c201"
+    },
+    "policy": "ALLOWLIST_NO_PARENT_TEST_CONTEXT_OR_LOADERS",
+    "cwd": "SAME_ABSOLUTE_SANDBOX_PATH_EVERY_RUN",
+    "lockfileSame": true,
+    "dependencySame": true,
+    "commandSame": true,
+    "command": [
+      "node",
+      "--test",
+      "--test-isolation=none",
+      "--test-concurrency=1",
+      "--test-timeout=15000",
+      "--test-reporter=<timewitness-reporter-file-url>",
+      "./value.test.cjs"
+    ],
+    "fingerprint": "98dbdde2cc5a8f20af8484a694cbb614ef34a6faf9ae80a68d4521f1b35d6206",
+    "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+    "cwdFingerprint": "e58d6addf01df1219eb0615327fd4cc72f58d61736842e6c9ea052f65305265e",
+    "testBytes": {
+      "value.test.cjs": "6f6165afaeb0315bb08c800c9e6c82fe38f0078872b48bd7290456d20d016f22"
+    }
+  },
+  "safety": {
+    "gitStateUnchanged": true,
+    "capturedSourceUnchanged": true,
+    "dependencyUnchanged": true,
+    "runtimeUnchanged": true
+  },
+  "timings": {
+    "archivalMs": 4.549800000002506,
+    "armMs": 537.8917000000001,
+    "sandboxPreparationMs": 18.02050000000054,
+    "beforeTestMs": 193.98260000000118,
+    "afterTestMs": 201.99339999999938,
+    "inputVerificationMs": 6.5143000000007305,
+    "cleanupMs": 0,
+    "cleanupPolicy": "RETAIN_NO_DELETION",
+    "proveMs": 1658.0151999999998,
+    "overheadMs": 1262.0391999999993,
+    "reportWriteMs": 1.3001000000003842,
+    "totalMs": 1659.322399999999
+  },
+  "privacy": {
+    "rawLogsSaved": false,
+    "testNames": "HMAC",
+    "environmentValuesSaved": false,
+    "sourceInReport": false,
+    "snapshots": "PRIVATE_LOCAL_SOURCE_COPIES_RETAINED",
+    "networkByTimewitness": false
+  },
+  "evidencePath": "runs/2026-09-15T09-53-24-249Z-3b02655b/report.json",
+  "currentHashes": {
+    "another.txt": {
+      "sha256": "61178797452155f10913861587fcc348813ba3cf7f4c7bc91715d150c02eebf1",
+      "mode": 438
+    },
+    "lib.cjs": {
+      "sha256": "44e0c9e7ead985db9872e03b59c7fe0b6dc14165cf0d9c5d6d72ed4dac4b5f32",
+      "mode": 438
+    },
+    "unrelated.txt": {
+      "sha256": "cbcc1b67854c29bd70c93ca838383356c04fd68df494dec8f2f857556fbb83fe",
+      "mode": 438
+    },
+    "value.test.cjs": {
+      "sha256": "6f6165afaeb0315bb08c800c9e6c82fe38f0078872b48bd7290456d20d016f22",
+      "mode": 438
+    }
+  },
+  "omitted": []
+}

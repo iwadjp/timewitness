@@ -1,0 +1,311 @@
+{
+  "version": 2,
+  "runId": "2026-09-15T09-53-34-383Z-8a0b3bb6",
+  "baselineId": "2026-09-15T09-53-34-237Z-5a9c1e36",
+  "createdAt": "2026-09-15T09:53:34.384Z",
+  "mode": "FULL_WITNESS",
+  "scope": ".",
+  "head": null,
+  "baselineAt": "2026-09-15T09:53:34.237Z",
+  "verdict": "PROVEN",
+  "reason": "REPEATED_ASSERTION_FAIL_TO_PASS",
+  "repeat": 3,
+  "timeoutMs": 15000,
+  "tests": [
+    "test/partial-skip-regression.test.cjs"
+  ],
+  "changed": [
+    "capture.cjs",
+    "lib.cjs",
+    "reporter.cjs",
+    "runner.cjs",
+    "test/partial-skip-regression.test.cjs"
+  ],
+  "witnessedChanges": [
+    "capture.cjs",
+    "lib.cjs",
+    "reporter.cjs",
+    "runner.cjs"
+  ],
+  "transplanted": [
+    "test/partial-skip-regression.test.cjs"
+  ],
+  "before": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "durationMs": 292.4927000000025,
+      "preparationMs": 7.698600000003353,
+      "verificationMs": 1.4681999999993423,
+      "outcome": "FAIL",
+      "passed": false,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "645487c81a2528867d0e62291c835b1a309c549b7380b65a29f792902ba1a53b",
+      "commandFingerprint": "b80e859c7a0b2a8b3b8c1d192e726438f6d735419e852dc1ec28e95f5eb95939",
+      "cwdFingerprint": "b6bf3fb412d7f2ba840ef8fcca965e1f534c08338fd95af97cb52e3a75f91d7e",
+      "tests": [
+        {
+          "id": "test/partial-skip-regression.test.cjs :: 2c3f526d1336ea17100b40f1858390f90bfab3b103ad26d5c45e69a17c59acc2",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [
+        {
+          "id": "test/partial-skip-regression.test.cjs :: 2c3f526d1336ea17100b40f1858390f90bfab3b103ad26d5c45e69a17c59acc2"
+        }
+      ],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "durationMs": 276.15369999999893,
+      "preparationMs": 6.074699999997392,
+      "verificationMs": 0.7330999999976484,
+      "outcome": "FAIL",
+      "passed": false,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "645487c81a2528867d0e62291c835b1a309c549b7380b65a29f792902ba1a53b",
+      "commandFingerprint": "b80e859c7a0b2a8b3b8c1d192e726438f6d735419e852dc1ec28e95f5eb95939",
+      "cwdFingerprint": "b6bf3fb412d7f2ba840ef8fcca965e1f534c08338fd95af97cb52e3a75f91d7e",
+      "tests": [
+        {
+          "id": "test/partial-skip-regression.test.cjs :: 2c3f526d1336ea17100b40f1858390f90bfab3b103ad26d5c45e69a17c59acc2",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [
+        {
+          "id": "test/partial-skip-regression.test.cjs :: 2c3f526d1336ea17100b40f1858390f90bfab3b103ad26d5c45e69a17c59acc2"
+        }
+      ],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "durationMs": 271.84140000000116,
+      "preparationMs": 6.003499999998894,
+      "verificationMs": 0.7347000000008848,
+      "outcome": "FAIL",
+      "passed": false,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "645487c81a2528867d0e62291c835b1a309c549b7380b65a29f792902ba1a53b",
+      "commandFingerprint": "b80e859c7a0b2a8b3b8c1d192e726438f6d735419e852dc1ec28e95f5eb95939",
+      "cwdFingerprint": "b6bf3fb412d7f2ba840ef8fcca965e1f534c08338fd95af97cb52e3a75f91d7e",
+      "tests": [
+        {
+          "id": "test/partial-skip-regression.test.cjs :: 2c3f526d1336ea17100b40f1858390f90bfab3b103ad26d5c45e69a17c59acc2",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [
+        {
+          "id": "test/partial-skip-regression.test.cjs :: 2c3f526d1336ea17100b40f1858390f90bfab3b103ad26d5c45e69a17c59acc2"
+        }
+      ],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "after": [
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 211.21010000000024,
+      "preparationMs": 8.12960000000021,
+      "verificationMs": 1.0418999999965308,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "645487c81a2528867d0e62291c835b1a309c549b7380b65a29f792902ba1a53b",
+      "commandFingerprint": "b80e859c7a0b2a8b3b8c1d192e726438f6d735419e852dc1ec28e95f5eb95939",
+      "cwdFingerprint": "b6bf3fb412d7f2ba840ef8fcca965e1f534c08338fd95af97cb52e3a75f91d7e",
+      "tests": [
+        {
+          "id": "test/partial-skip-regression.test.cjs :: 2c3f526d1336ea17100b40f1858390f90bfab3b103ad26d5c45e69a17c59acc2",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 198.62259999999878,
+      "preparationMs": 7.417199999999866,
+      "verificationMs": 1.2554999999993015,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "645487c81a2528867d0e62291c835b1a309c549b7380b65a29f792902ba1a53b",
+      "commandFingerprint": "b80e859c7a0b2a8b3b8c1d192e726438f6d735419e852dc1ec28e95f5eb95939",
+      "cwdFingerprint": "b6bf3fb412d7f2ba840ef8fcca965e1f534c08338fd95af97cb52e3a75f91d7e",
+      "tests": [
+        {
+          "id": "test/partial-skip-regression.test.cjs :: 2c3f526d1336ea17100b40f1858390f90bfab3b103ad26d5c45e69a17c59acc2",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 210.03119999999763,
+      "preparationMs": 7.824500000002445,
+      "verificationMs": 1.1022000000011758,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "645487c81a2528867d0e62291c835b1a309c549b7380b65a29f792902ba1a53b",
+      "commandFingerprint": "b80e859c7a0b2a8b3b8c1d192e726438f6d735419e852dc1ec28e95f5eb95939",
+      "cwdFingerprint": "b6bf3fb412d7f2ba840ef8fcca965e1f534c08338fd95af97cb52e3a75f91d7e",
+      "tests": [
+        {
+          "id": "test/partial-skip-regression.test.cjs :: 2c3f526d1336ea17100b40f1858390f90bfab3b103ad26d5c45e69a17c59acc2",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "environment": {
+    "state": "EXISTING_ENV",
+    "kind": "NODE_BUILTINS_ONLY",
+    "manifestHashes": {
+      "package.json": "83a734a935a6af226d20f191260d77c3a8f937da780859263db9dfad6649a542"
+    },
+    "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 0,
+    "count": 0,
+    "reasons": [],
+    "runtime": {
+      "node": "v24.15.0",
+      "platform": "win32",
+      "arch": "x64",
+      "nodeSha256": "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+      "reporterSha256": "47d2b2b4178bb574d01c419f52faa3f0f0d32b0f535e85b5300e24daa1a5c201"
+    },
+    "policy": "ALLOWLIST_NO_PARENT_TEST_CONTEXT_OR_LOADERS",
+    "cwd": "SAME_ABSOLUTE_SANDBOX_PATH_EVERY_RUN",
+    "lockfileSame": true,
+    "dependencySame": true,
+    "commandSame": true,
+    "command": [
+      "node",
+      "--test",
+      "--test-isolation=none",
+      "--test-concurrency=1",
+      "--test-timeout=15000",
+      "--test-reporter=<timewitness-reporter-file-url>",
+      "./test/partial-skip-regression.test.cjs"
+    ],
+    "fingerprint": "645487c81a2528867d0e62291c835b1a309c549b7380b65a29f792902ba1a53b",
+    "commandFingerprint": "b80e859c7a0b2a8b3b8c1d192e726438f6d735419e852dc1ec28e95f5eb95939",
+    "cwdFingerprint": "b6bf3fb412d7f2ba840ef8fcca965e1f534c08338fd95af97cb52e3a75f91d7e",
+    "testBytes": {
+      "test/partial-skip-regression.test.cjs": "d75bff2ef9ac5ebbcecbc216b61559ba6820d5ebb09bfab5f245786d1b9af7d1"
+    }
+  },
+  "safety": {
+    "gitStateUnchanged": true,
+    "capturedSourceUnchanged": true,
+    "dependencyUnchanged": true,
+    "runtimeUnchanged": true
+  },
+  "timings": {
+    "archivalMs": 7.882600000000821,
+    "armMs": 512.1018000000004,
+    "sandboxPreparationMs": 43.14810000000216,
+    "beforeTestMs": 840.4878000000026,
+    "afterTestMs": 619.8638999999966,
+    "inputVerificationMs": 6.3355999999948835,
+    "cleanupMs": 0,
+    "cleanupPolicy": "RETAIN_NO_DELETION",
+    "proveMs": 2725.511200000001,
+    "overheadMs": 1265.1595000000016,
+    "reportWriteMs": 1.0750999999982014,
+    "totalMs": 2726.590799999998
+  },
+  "privacy": {
+    "rawLogsSaved": false,
+    "testNames": "HMAC",
+    "environmentValuesSaved": false,
+    "sourceInReport": false,
+    "snapshots": "PRIVATE_LOCAL_SOURCE_COPIES_RETAINED",
+    "networkByTimewitness": false
+  },
+  "evidencePath": "runs/2026-09-15T09-53-34-383Z-8a0b3bb6/report.json",
+  "currentHashes": {
+    "capture.cjs": {
+      "sha256": "58cd78c0209b8e479ac0d61793f7173041463853a610a488509b6674ff13aabd",
+      "mode": 438
+    },
+    "lib.cjs": {
+      "sha256": "66a634927d8cbe03700ce4409339a706eb160576b907f49cd07de6285e561e21",
+      "mode": 438
+    },
+    "package.json": {
+      "sha256": "83a734a935a6af226d20f191260d77c3a8f937da780859263db9dfad6649a542",
+      "mode": 438
+    },
+    "reporter.cjs": {
+      "sha256": "47d2b2b4178bb574d01c419f52faa3f0f0d32b0f535e85b5300e24daa1a5c201",
+      "mode": 438
+    },
+    "runner.cjs": {
+      "sha256": "d54fcd4e9edd51864b27b31361dbac20038ac43e11b9a50f60f2bf724674c08a",
+      "mode": 438
+    },
+    "test/partial-skip-regression.test.cjs": {
+      "sha256": "d75bff2ef9ac5ebbcecbc216b61559ba6820d5ebb09bfab5f245786d1b9af7d1",
+      "mode": 438
+    }
+  },
+  "omitted": []
+}

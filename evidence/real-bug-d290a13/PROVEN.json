@@ -1,0 +1,1429 @@
+{
+  "version": 2,
+  "runId": "2026-09-15T22-31-50-295Z-9ce7aaa6",
+  "baselineId": "2026-09-15T22-31-37-834Z-8b7f3f59",
+  "createdAt": "2026-09-15T22:31:50.297Z",
+  "mode": "FULL_WITNESS",
+  "scope": "automation,test",
+  "head": "7aeaeca3cb7d9a2c569ee0860a497a8a03c15cb1",
+  "baselineAt": "2026-09-15T22:31:37.835Z",
+  "verdict": "PROVEN",
+  "reason": "REPEATED_ASSERTION_FAIL_TO_PASS",
+  "repeat": 3,
+  "timeoutMs": 15000,
+  "tests": [
+    "test/layer1-dashboard-read-api.test.js",
+    "test/layer1-dashboard-runs.test.js",
+    "test/layer1-snapshot.test.js"
+  ],
+  "changed": [
+    "automation/lib/layer1-dashboard-data.js",
+    "test/layer1-dashboard-read-api.test.js",
+    "test/layer1-dashboard-runs.test.js",
+    "test/layer1-snapshot.test.js"
+  ],
+  "witnessedChanges": [
+    "automation/lib/layer1-dashboard-data.js"
+  ],
+  "transplanted": [
+    "test/layer1-dashboard-read-api.test.js",
+    "test/layer1-dashboard-runs.test.js",
+    "test/layer1-snapshot.test.js"
+  ],
+  "before": [
+    {
+      "exitCode": 1,
+      "signal": null,
+      "durationMs": 593.4317999999998,
+      "preparationMs": 13.509799999999814,
+      "verificationMs": 1.9891000000000076,
+      "outcome": "FAIL",
+      "passed": false,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "af2562fe2b6f060009a18759f732f01fc8196cd79a130fcf9ed971fb676d9ca8",
+      "commandFingerprint": "f6a246979dbc5ea0c7f84e6a00c04680b8053ee93b99d965501ffb504fcb249b",
+      "cwdFingerprint": "df2c9ece19e749235badc6d467f5e05905f855f4264b82057114f9a7d75aedc1",
+      "tests": [
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: c8a53922371259a0afa58b25601072554b2f1ab4588cf9ad017db82791f3bf80",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 14f9eaff95eb97b25eb23dd2489103c5a312f51982f4a568fce620f42461903b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 6659152c4c3e73616cffe2c6af3bc50ae5d4c9cbeb2d86610442b69f9f7aae62",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 300ea5099aefe0802dbadf71e22351cdf2fa5eb053f7a452e76407af9f60bd8d",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 962e81fa79f9b3fb67df3dde03544c4e3cabb44d8b385b9a46145faf0001b100",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: da4984f8f39d9b5624b1ee072fea5f6fcc2a4fb467d3fa62597815c7d0b02539",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: ba4f6aedd14dfca624ec42300df73902dc92c1ce6f1e5aa8f248d9ee0165fd90",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: b7f8b363d5e1295276d17f44f96e2ed15cf8b7c642f3678b35fc0efb1825b115",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 84f6f3bc300a3d23b62f562083736b381efbc8c56d5859edd4821d79b20392fa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 51129f7ef6d718f2bf96e3529defe08613d6431f36f144c05676148442e2e430",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 825a385057859bb1a94d9decd72402ec119112dec28348276a78448ec198b876",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 86d0d95409a169404a3248e2fbc687942ede23fd8937ec8cc192cdaeec3c106a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 1a41c0099df45b143fc499dc453137e9a8bf2c6c0a9ffc8d68cb5f31fa634d68",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 193003229fd57781e2688db89635cc3a7e31bac8d8cda72bc89408336db5560b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fb2fe22ad21fc7db6efda9a66e08edd173486d98a6ac4e1939dafe0ed99f536e",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 01f95d825384204d6c8edcf8ce4d9ab7dbcb44ab511a8c488974d90e10358caa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 8a469b1d163baf296a05fb04a4f8236b1a38bfa2879379516ab357e1b2feda99",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 6eb94983a3c68516c4294791b30345c5d3b2a2bcdae2daf2f5181558e0bf2a2f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: b41683f21e0db5c9354a92f7b9d747f7a4885eda280a9b4e410da087d777cea4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 723f3328335c6d820da230be1c2950715eee9d4fa81e7be63e2e91372375a281",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bf2b95437cd33c053af5063abb53a7d23abb353f1947437a4bbef63b3249a285",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 9f83959f9ae048620c17072f5b3bf580954e38215e07907a6d77dfacff042947",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 0a4aa44c24b9a42eb886964fdbfed95e313959c031ce8fb8a38e1795109bfd0d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fc8f1e84a9fd4620407239572f316aa829c2011ae6e76a13f049190f74b736f1",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bd3a39c265a7b40da089a736dbd016d16466b554b920ca5bb34711b76f73fe25",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 716fbc324c50533b9a24ce62d34e24f8cc082aa164ffe959170285eaabe705ac",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5141d26718c9591e295f27e8092a9c56e5d61c1c0a7fdbc77e3996c2f16dc00a",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 2ddad025ae71719e687f8ac1a143bd1e233d4c778d9a1798390bb30a343c1fd4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 9914fd0b3b0af9af41d3bcbb8db128611cc80ac80a6963e363e1e13ba3755b3f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5ffaee5c030646bfe883fb58b51e56901fd7931f769c9cedbca2cd711a47f199",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: b07795394595c285f63ad7c792a1a6cc246288dd4e9ee1a6fac9288d21c8cd4a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 300ea5099aefe0802dbadf71e22351cdf2fa5eb053f7a452e76407af9f60bd8d"
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 723f3328335c6d820da230be1c2950715eee9d4fa81e7be63e2e91372375a281"
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5141d26718c9591e295f27e8092a9c56e5d61c1c0a7fdbc77e3996c2f16dc00a"
+        }
+      ],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "durationMs": 578.5946000000004,
+      "preparationMs": 12.594900000000052,
+      "verificationMs": 1.9038000000000466,
+      "outcome": "FAIL",
+      "passed": false,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "af2562fe2b6f060009a18759f732f01fc8196cd79a130fcf9ed971fb676d9ca8",
+      "commandFingerprint": "f6a246979dbc5ea0c7f84e6a00c04680b8053ee93b99d965501ffb504fcb249b",
+      "cwdFingerprint": "df2c9ece19e749235badc6d467f5e05905f855f4264b82057114f9a7d75aedc1",
+      "tests": [
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: c8a53922371259a0afa58b25601072554b2f1ab4588cf9ad017db82791f3bf80",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 14f9eaff95eb97b25eb23dd2489103c5a312f51982f4a568fce620f42461903b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 6659152c4c3e73616cffe2c6af3bc50ae5d4c9cbeb2d86610442b69f9f7aae62",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 300ea5099aefe0802dbadf71e22351cdf2fa5eb053f7a452e76407af9f60bd8d",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 962e81fa79f9b3fb67df3dde03544c4e3cabb44d8b385b9a46145faf0001b100",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: da4984f8f39d9b5624b1ee072fea5f6fcc2a4fb467d3fa62597815c7d0b02539",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: ba4f6aedd14dfca624ec42300df73902dc92c1ce6f1e5aa8f248d9ee0165fd90",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: b7f8b363d5e1295276d17f44f96e2ed15cf8b7c642f3678b35fc0efb1825b115",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 84f6f3bc300a3d23b62f562083736b381efbc8c56d5859edd4821d79b20392fa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 51129f7ef6d718f2bf96e3529defe08613d6431f36f144c05676148442e2e430",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 825a385057859bb1a94d9decd72402ec119112dec28348276a78448ec198b876",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 86d0d95409a169404a3248e2fbc687942ede23fd8937ec8cc192cdaeec3c106a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 1a41c0099df45b143fc499dc453137e9a8bf2c6c0a9ffc8d68cb5f31fa634d68",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 193003229fd57781e2688db89635cc3a7e31bac8d8cda72bc89408336db5560b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fb2fe22ad21fc7db6efda9a66e08edd173486d98a6ac4e1939dafe0ed99f536e",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 01f95d825384204d6c8edcf8ce4d9ab7dbcb44ab511a8c488974d90e10358caa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 8a469b1d163baf296a05fb04a4f8236b1a38bfa2879379516ab357e1b2feda99",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 6eb94983a3c68516c4294791b30345c5d3b2a2bcdae2daf2f5181558e0bf2a2f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: b41683f21e0db5c9354a92f7b9d747f7a4885eda280a9b4e410da087d777cea4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 723f3328335c6d820da230be1c2950715eee9d4fa81e7be63e2e91372375a281",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bf2b95437cd33c053af5063abb53a7d23abb353f1947437a4bbef63b3249a285",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 9f83959f9ae048620c17072f5b3bf580954e38215e07907a6d77dfacff042947",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 0a4aa44c24b9a42eb886964fdbfed95e313959c031ce8fb8a38e1795109bfd0d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fc8f1e84a9fd4620407239572f316aa829c2011ae6e76a13f049190f74b736f1",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bd3a39c265a7b40da089a736dbd016d16466b554b920ca5bb34711b76f73fe25",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 716fbc324c50533b9a24ce62d34e24f8cc082aa164ffe959170285eaabe705ac",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5141d26718c9591e295f27e8092a9c56e5d61c1c0a7fdbc77e3996c2f16dc00a",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 2ddad025ae71719e687f8ac1a143bd1e233d4c778d9a1798390bb30a343c1fd4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 9914fd0b3b0af9af41d3bcbb8db128611cc80ac80a6963e363e1e13ba3755b3f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5ffaee5c030646bfe883fb58b51e56901fd7931f769c9cedbca2cd711a47f199",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: b07795394595c285f63ad7c792a1a6cc246288dd4e9ee1a6fac9288d21c8cd4a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 300ea5099aefe0802dbadf71e22351cdf2fa5eb053f7a452e76407af9f60bd8d"
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 723f3328335c6d820da230be1c2950715eee9d4fa81e7be63e2e91372375a281"
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5141d26718c9591e295f27e8092a9c56e5d61c1c0a7fdbc77e3996c2f16dc00a"
+        }
+      ],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 1,
+      "signal": null,
+      "durationMs": 518.8642999999997,
+      "preparationMs": 12.572799999999916,
+      "verificationMs": 1.8865000000000691,
+      "outcome": "FAIL",
+      "passed": false,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "af2562fe2b6f060009a18759f732f01fc8196cd79a130fcf9ed971fb676d9ca8",
+      "commandFingerprint": "f6a246979dbc5ea0c7f84e6a00c04680b8053ee93b99d965501ffb504fcb249b",
+      "cwdFingerprint": "df2c9ece19e749235badc6d467f5e05905f855f4264b82057114f9a7d75aedc1",
+      "tests": [
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: c8a53922371259a0afa58b25601072554b2f1ab4588cf9ad017db82791f3bf80",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 14f9eaff95eb97b25eb23dd2489103c5a312f51982f4a568fce620f42461903b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 6659152c4c3e73616cffe2c6af3bc50ae5d4c9cbeb2d86610442b69f9f7aae62",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 300ea5099aefe0802dbadf71e22351cdf2fa5eb053f7a452e76407af9f60bd8d",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 962e81fa79f9b3fb67df3dde03544c4e3cabb44d8b385b9a46145faf0001b100",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: da4984f8f39d9b5624b1ee072fea5f6fcc2a4fb467d3fa62597815c7d0b02539",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: ba4f6aedd14dfca624ec42300df73902dc92c1ce6f1e5aa8f248d9ee0165fd90",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: b7f8b363d5e1295276d17f44f96e2ed15cf8b7c642f3678b35fc0efb1825b115",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 84f6f3bc300a3d23b62f562083736b381efbc8c56d5859edd4821d79b20392fa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 51129f7ef6d718f2bf96e3529defe08613d6431f36f144c05676148442e2e430",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 825a385057859bb1a94d9decd72402ec119112dec28348276a78448ec198b876",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 86d0d95409a169404a3248e2fbc687942ede23fd8937ec8cc192cdaeec3c106a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 1a41c0099df45b143fc499dc453137e9a8bf2c6c0a9ffc8d68cb5f31fa634d68",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 193003229fd57781e2688db89635cc3a7e31bac8d8cda72bc89408336db5560b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fb2fe22ad21fc7db6efda9a66e08edd173486d98a6ac4e1939dafe0ed99f536e",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 01f95d825384204d6c8edcf8ce4d9ab7dbcb44ab511a8c488974d90e10358caa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 8a469b1d163baf296a05fb04a4f8236b1a38bfa2879379516ab357e1b2feda99",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 6eb94983a3c68516c4294791b30345c5d3b2a2bcdae2daf2f5181558e0bf2a2f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: b41683f21e0db5c9354a92f7b9d747f7a4885eda280a9b4e410da087d777cea4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 723f3328335c6d820da230be1c2950715eee9d4fa81e7be63e2e91372375a281",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bf2b95437cd33c053af5063abb53a7d23abb353f1947437a4bbef63b3249a285",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 9f83959f9ae048620c17072f5b3bf580954e38215e07907a6d77dfacff042947",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 0a4aa44c24b9a42eb886964fdbfed95e313959c031ce8fb8a38e1795109bfd0d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fc8f1e84a9fd4620407239572f316aa829c2011ae6e76a13f049190f74b736f1",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bd3a39c265a7b40da089a736dbd016d16466b554b920ca5bb34711b76f73fe25",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 716fbc324c50533b9a24ce62d34e24f8cc082aa164ffe959170285eaabe705ac",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5141d26718c9591e295f27e8092a9c56e5d61c1c0a7fdbc77e3996c2f16dc00a",
+          "passed": false,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 2ddad025ae71719e687f8ac1a143bd1e233d4c778d9a1798390bb30a343c1fd4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 9914fd0b3b0af9af41d3bcbb8db128611cc80ac80a6963e363e1e13ba3755b3f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5ffaee5c030646bfe883fb58b51e56901fd7931f769c9cedbca2cd711a47f199",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: b07795394595c285f63ad7c792a1a6cc246288dd4e9ee1a6fac9288d21c8cd4a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 300ea5099aefe0802dbadf71e22351cdf2fa5eb053f7a452e76407af9f60bd8d"
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 723f3328335c6d820da230be1c2950715eee9d4fa81e7be63e2e91372375a281"
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5141d26718c9591e295f27e8092a9c56e5d61c1c0a7fdbc77e3996c2f16dc00a"
+        }
+      ],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "after": [
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 532.7379999999998,
+      "preparationMs": 11.318399999999883,
+      "verificationMs": 2.0917999999996937,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "af2562fe2b6f060009a18759f732f01fc8196cd79a130fcf9ed971fb676d9ca8",
+      "commandFingerprint": "f6a246979dbc5ea0c7f84e6a00c04680b8053ee93b99d965501ffb504fcb249b",
+      "cwdFingerprint": "df2c9ece19e749235badc6d467f5e05905f855f4264b82057114f9a7d75aedc1",
+      "tests": [
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: c8a53922371259a0afa58b25601072554b2f1ab4588cf9ad017db82791f3bf80",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 14f9eaff95eb97b25eb23dd2489103c5a312f51982f4a568fce620f42461903b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 6659152c4c3e73616cffe2c6af3bc50ae5d4c9cbeb2d86610442b69f9f7aae62",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 300ea5099aefe0802dbadf71e22351cdf2fa5eb053f7a452e76407af9f60bd8d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 962e81fa79f9b3fb67df3dde03544c4e3cabb44d8b385b9a46145faf0001b100",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: da4984f8f39d9b5624b1ee072fea5f6fcc2a4fb467d3fa62597815c7d0b02539",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: ba4f6aedd14dfca624ec42300df73902dc92c1ce6f1e5aa8f248d9ee0165fd90",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: b7f8b363d5e1295276d17f44f96e2ed15cf8b7c642f3678b35fc0efb1825b115",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 84f6f3bc300a3d23b62f562083736b381efbc8c56d5859edd4821d79b20392fa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 51129f7ef6d718f2bf96e3529defe08613d6431f36f144c05676148442e2e430",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 825a385057859bb1a94d9decd72402ec119112dec28348276a78448ec198b876",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 86d0d95409a169404a3248e2fbc687942ede23fd8937ec8cc192cdaeec3c106a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 1a41c0099df45b143fc499dc453137e9a8bf2c6c0a9ffc8d68cb5f31fa634d68",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 193003229fd57781e2688db89635cc3a7e31bac8d8cda72bc89408336db5560b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fb2fe22ad21fc7db6efda9a66e08edd173486d98a6ac4e1939dafe0ed99f536e",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 01f95d825384204d6c8edcf8ce4d9ab7dbcb44ab511a8c488974d90e10358caa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 8a469b1d163baf296a05fb04a4f8236b1a38bfa2879379516ab357e1b2feda99",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 6eb94983a3c68516c4294791b30345c5d3b2a2bcdae2daf2f5181558e0bf2a2f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: b41683f21e0db5c9354a92f7b9d747f7a4885eda280a9b4e410da087d777cea4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 723f3328335c6d820da230be1c2950715eee9d4fa81e7be63e2e91372375a281",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bf2b95437cd33c053af5063abb53a7d23abb353f1947437a4bbef63b3249a285",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 9f83959f9ae048620c17072f5b3bf580954e38215e07907a6d77dfacff042947",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 0a4aa44c24b9a42eb886964fdbfed95e313959c031ce8fb8a38e1795109bfd0d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fc8f1e84a9fd4620407239572f316aa829c2011ae6e76a13f049190f74b736f1",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bd3a39c265a7b40da089a736dbd016d16466b554b920ca5bb34711b76f73fe25",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 716fbc324c50533b9a24ce62d34e24f8cc082aa164ffe959170285eaabe705ac",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5141d26718c9591e295f27e8092a9c56e5d61c1c0a7fdbc77e3996c2f16dc00a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 2ddad025ae71719e687f8ac1a143bd1e233d4c778d9a1798390bb30a343c1fd4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 9914fd0b3b0af9af41d3bcbb8db128611cc80ac80a6963e363e1e13ba3755b3f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5ffaee5c030646bfe883fb58b51e56901fd7931f769c9cedbca2cd711a47f199",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: b07795394595c285f63ad7c792a1a6cc246288dd4e9ee1a6fac9288d21c8cd4a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 575.2598000000003,
+      "preparationMs": 11.870499999999993,
+      "verificationMs": 2.0086999999998625,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "af2562fe2b6f060009a18759f732f01fc8196cd79a130fcf9ed971fb676d9ca8",
+      "commandFingerprint": "f6a246979dbc5ea0c7f84e6a00c04680b8053ee93b99d965501ffb504fcb249b",
+      "cwdFingerprint": "df2c9ece19e749235badc6d467f5e05905f855f4264b82057114f9a7d75aedc1",
+      "tests": [
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: c8a53922371259a0afa58b25601072554b2f1ab4588cf9ad017db82791f3bf80",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 14f9eaff95eb97b25eb23dd2489103c5a312f51982f4a568fce620f42461903b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 6659152c4c3e73616cffe2c6af3bc50ae5d4c9cbeb2d86610442b69f9f7aae62",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 300ea5099aefe0802dbadf71e22351cdf2fa5eb053f7a452e76407af9f60bd8d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 962e81fa79f9b3fb67df3dde03544c4e3cabb44d8b385b9a46145faf0001b100",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: da4984f8f39d9b5624b1ee072fea5f6fcc2a4fb467d3fa62597815c7d0b02539",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: ba4f6aedd14dfca624ec42300df73902dc92c1ce6f1e5aa8f248d9ee0165fd90",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: b7f8b363d5e1295276d17f44f96e2ed15cf8b7c642f3678b35fc0efb1825b115",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 84f6f3bc300a3d23b62f562083736b381efbc8c56d5859edd4821d79b20392fa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 51129f7ef6d718f2bf96e3529defe08613d6431f36f144c05676148442e2e430",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 825a385057859bb1a94d9decd72402ec119112dec28348276a78448ec198b876",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 86d0d95409a169404a3248e2fbc687942ede23fd8937ec8cc192cdaeec3c106a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 1a41c0099df45b143fc499dc453137e9a8bf2c6c0a9ffc8d68cb5f31fa634d68",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 193003229fd57781e2688db89635cc3a7e31bac8d8cda72bc89408336db5560b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fb2fe22ad21fc7db6efda9a66e08edd173486d98a6ac4e1939dafe0ed99f536e",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 01f95d825384204d6c8edcf8ce4d9ab7dbcb44ab511a8c488974d90e10358caa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 8a469b1d163baf296a05fb04a4f8236b1a38bfa2879379516ab357e1b2feda99",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 6eb94983a3c68516c4294791b30345c5d3b2a2bcdae2daf2f5181558e0bf2a2f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: b41683f21e0db5c9354a92f7b9d747f7a4885eda280a9b4e410da087d777cea4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 723f3328335c6d820da230be1c2950715eee9d4fa81e7be63e2e91372375a281",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bf2b95437cd33c053af5063abb53a7d23abb353f1947437a4bbef63b3249a285",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 9f83959f9ae048620c17072f5b3bf580954e38215e07907a6d77dfacff042947",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 0a4aa44c24b9a42eb886964fdbfed95e313959c031ce8fb8a38e1795109bfd0d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fc8f1e84a9fd4620407239572f316aa829c2011ae6e76a13f049190f74b736f1",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bd3a39c265a7b40da089a736dbd016d16466b554b920ca5bb34711b76f73fe25",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 716fbc324c50533b9a24ce62d34e24f8cc082aa164ffe959170285eaabe705ac",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5141d26718c9591e295f27e8092a9c56e5d61c1c0a7fdbc77e3996c2f16dc00a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 2ddad025ae71719e687f8ac1a143bd1e233d4c778d9a1798390bb30a343c1fd4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 9914fd0b3b0af9af41d3bcbb8db128611cc80ac80a6963e363e1e13ba3755b3f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5ffaee5c030646bfe883fb58b51e56901fd7931f769c9cedbca2cd711a47f199",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: b07795394595c285f63ad7c792a1a6cc246288dd4e9ee1a6fac9288d21c8cd4a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 573.6552999999994,
+      "preparationMs": 12.266900000000078,
+      "verificationMs": 1.8739999999997963,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "af2562fe2b6f060009a18759f732f01fc8196cd79a130fcf9ed971fb676d9ca8",
+      "commandFingerprint": "f6a246979dbc5ea0c7f84e6a00c04680b8053ee93b99d965501ffb504fcb249b",
+      "cwdFingerprint": "df2c9ece19e749235badc6d467f5e05905f855f4264b82057114f9a7d75aedc1",
+      "tests": [
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: c8a53922371259a0afa58b25601072554b2f1ab4588cf9ad017db82791f3bf80",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 14f9eaff95eb97b25eb23dd2489103c5a312f51982f4a568fce620f42461903b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 6659152c4c3e73616cffe2c6af3bc50ae5d4c9cbeb2d86610442b69f9f7aae62",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 300ea5099aefe0802dbadf71e22351cdf2fa5eb053f7a452e76407af9f60bd8d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 962e81fa79f9b3fb67df3dde03544c4e3cabb44d8b385b9a46145faf0001b100",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: da4984f8f39d9b5624b1ee072fea5f6fcc2a4fb467d3fa62597815c7d0b02539",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: ba4f6aedd14dfca624ec42300df73902dc92c1ce6f1e5aa8f248d9ee0165fd90",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: b7f8b363d5e1295276d17f44f96e2ed15cf8b7c642f3678b35fc0efb1825b115",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 84f6f3bc300a3d23b62f562083736b381efbc8c56d5859edd4821d79b20392fa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 51129f7ef6d718f2bf96e3529defe08613d6431f36f144c05676148442e2e430",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 825a385057859bb1a94d9decd72402ec119112dec28348276a78448ec198b876",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 86d0d95409a169404a3248e2fbc687942ede23fd8937ec8cc192cdaeec3c106a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-read-api.test.js :: 1a41c0099df45b143fc499dc453137e9a8bf2c6c0a9ffc8d68cb5f31fa634d68",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 193003229fd57781e2688db89635cc3a7e31bac8d8cda72bc89408336db5560b",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fb2fe22ad21fc7db6efda9a66e08edd173486d98a6ac4e1939dafe0ed99f536e",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 01f95d825384204d6c8edcf8ce4d9ab7dbcb44ab511a8c488974d90e10358caa",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 8a469b1d163baf296a05fb04a4f8236b1a38bfa2879379516ab357e1b2feda99",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 6eb94983a3c68516c4294791b30345c5d3b2a2bcdae2daf2f5181558e0bf2a2f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: b41683f21e0db5c9354a92f7b9d747f7a4885eda280a9b4e410da087d777cea4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 723f3328335c6d820da230be1c2950715eee9d4fa81e7be63e2e91372375a281",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bf2b95437cd33c053af5063abb53a7d23abb353f1947437a4bbef63b3249a285",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 9f83959f9ae048620c17072f5b3bf580954e38215e07907a6d77dfacff042947",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 0a4aa44c24b9a42eb886964fdbfed95e313959c031ce8fb8a38e1795109bfd0d",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: fc8f1e84a9fd4620407239572f316aa829c2011ae6e76a13f049190f74b736f1",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: bd3a39c265a7b40da089a736dbd016d16466b554b920ca5bb34711b76f73fe25",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-dashboard-runs.test.js :: 716fbc324c50533b9a24ce62d34e24f8cc082aa164ffe959170285eaabe705ac",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5141d26718c9591e295f27e8092a9c56e5d61c1c0a7fdbc77e3996c2f16dc00a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 2ddad025ae71719e687f8ac1a143bd1e233d4c778d9a1798390bb30a343c1fd4",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 9914fd0b3b0af9af41d3bcbb8db128611cc80ac80a6963e363e1e13ba3755b3f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: 5ffaee5c030646bfe883fb58b51e56901fd7931f769c9cedbca2cd711a47f199",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        },
+        {
+          "id": "test/layer1-snapshot.test.js :: b07795394595c285f63ad7c792a1a6cc246288dd4e9ee1a6fac9288d21c8cd4a",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "environment": {
+    "state": "EXISTING_ENV",
+    "kind": "NODE_BUILTINS_ONLY",
+    "manifestHashes": {},
+    "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 0,
+    "count": 0,
+    "reasons": [],
+    "runtime": {
+      "node": "v24.15.0",
+      "platform": "win32",
+      "arch": "x64",
+      "nodeSha256": "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+      "reporterSha256": "47d2b2b4178bb574d01c419f52faa3f0f0d32b0f535e85b5300e24daa1a5c201"
+    },
+    "policy": "ALLOWLIST_NO_PARENT_TEST_CONTEXT_OR_LOADERS",
+    "cwd": "SAME_ABSOLUTE_SANDBOX_PATH_EVERY_RUN",
+    "lockfileSame": true,
+    "dependencySame": true,
+    "commandSame": true,
+    "command": [
+      "node",
+      "--test",
+      "--test-isolation=none",
+      "--test-concurrency=1",
+      "--test-timeout=15000",
+      "--test-reporter=<timewitness-reporter-file-url>",
+      "./test/layer1-dashboard-read-api.test.js",
+      "./test/layer1-dashboard-runs.test.js",
+      "./test/layer1-snapshot.test.js"
+    ],
+    "fingerprint": "af2562fe2b6f060009a18759f732f01fc8196cd79a130fcf9ed971fb676d9ca8",
+    "commandFingerprint": "f6a246979dbc5ea0c7f84e6a00c04680b8053ee93b99d965501ffb504fcb249b",
+    "cwdFingerprint": "df2c9ece19e749235badc6d467f5e05905f855f4264b82057114f9a7d75aedc1",
+    "testBytes": {
+      "test/layer1-dashboard-read-api.test.js": "fcad7489ecd9bb5df80987000b48f01a05c5c12e651dd20f7e4bc4ca935c92fb",
+      "test/layer1-dashboard-runs.test.js": "e7bfef27b8170ac9cf18b7a75561da7e2edbcfcaabaf9426130c4204a0fe5f11",
+      "test/layer1-snapshot.test.js": "01e514fba3c2ad2e22f2adc805b4d1d61e75f8e4fbf9374e02870f078eb89124"
+    }
+  },
+  "safety": {
+    "gitStateUnchanged": true,
+    "capturedSourceUnchanged": true,
+    "dependencyUnchanged": true,
+    "runtimeUnchanged": true
+  },
+  "timings": {
+    "archivalMs": 6.665800000000445,
+    "armMs": 438.0373000000001,
+    "sandboxPreparationMs": 74.13329999999974,
+    "beforeTestMs": 1690.8907,
+    "afterTestMs": 1681.6530999999995,
+    "inputVerificationMs": 11.753899999999476,
+    "cleanupMs": 0,
+    "cleanupPolicy": "RETAIN_NO_DELETION",
+    "proveMs": 4738.9315,
+    "overheadMs": 1366.3877000000002
+  },
+  "privacy": {
+    "rawLogsSaved": false,
+    "testNames": "HMAC",
+    "environmentValuesSaved": false,
+    "sourceInReport": false,
+    "snapshots": "PRIVATE_LOCAL_SOURCE_COPIES_RETAINED",
+    "networkByTimewitness": false
+  },
+  "evidencePath": "runs/2026-09-15T22-31-50-295Z-9ce7aaa6/report.json",
+  "currentHashes": {
+    "automation/lib/layer1-dashboard-data.js": {
+      "sha256": "06afdea6dd01ae508c157b9e4d2847d6f63d4f2b3c06031049900592b34fcde1",
+      "mode": 438
+    },
+    "automation/lib/layer1-dashboard-state.js": {
+      "sha256": "4537aabcca18fc905845d98cd2d06cb3dfdf468d010b2f5abf4dcd186f605874",
+      "mode": 438
+    },
+    "automation/lib/layer1-history-identity.js": {
+      "sha256": "8fabe40fe613b5c6ec01dcfeb64a1697a407c1227308962f6a3f2c254b30a210",
+      "mode": 438
+    },
+    "automation/lib/layer1-history-store.js": {
+      "sha256": "15243389c3e5bd8c5b4a352169fa86c2fb130febaeeddb1a393c19b1d393d212",
+      "mode": 438
+    },
+    "automation/lib/layer1-phase2-hash.js": {
+      "sha256": "728c3db0299c86b7667dcb12b3a3c4e56e27d7b5b7916da68b0a1bf48c8b8251",
+      "mode": 438
+    },
+    "automation/lib/layer1-snapshot.js": {
+      "sha256": "0bde3ac3fa115b4861b2b8b162cd896b7abd9241bee7a8da80b1bf9c10a596c5",
+      "mode": 438
+    },
+    "test/layer1-dashboard-fixtures.js": {
+      "sha256": "76673d9b4823b81ec1383082ad69b7f1009ead108af2f60599247d1c82ea5e3b",
+      "mode": 438
+    },
+    "test/layer1-dashboard-read-api.test.js": {
+      "sha256": "fcad7489ecd9bb5df80987000b48f01a05c5c12e651dd20f7e4bc4ca935c92fb",
+      "mode": 438
+    },
+    "test/layer1-dashboard-runs.test.js": {
+      "sha256": "e7bfef27b8170ac9cf18b7a75561da7e2edbcfcaabaf9426130c4204a0fe5f11",
+      "mode": 438
+    },
+    "test/layer1-snapshot.test.js": {
+      "sha256": "01e514fba3c2ad2e22f2adc805b4d1d61e75f8e4fbf9374e02870f078eb89124",
+      "mode": 438
+    },
+    "test/unrelated.test.cjs": {
+      "sha256": "31b4ccd85241be06f715d41b43b7d843bf37087ccb1b395d0aa0f76c98add042",
+      "mode": 438
+    }
+  },
+  "omitted": []
+}

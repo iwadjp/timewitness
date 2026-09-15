@@ -1,0 +1,258 @@
+{
+  "version": 2,
+  "runId": "2026-09-15T22-32-00-218Z-a6e5879c",
+  "baselineId": "2026-09-15T22-31-37-834Z-8b7f3f59",
+  "createdAt": "2026-09-15T22:32:00.219Z",
+  "mode": "FULL_WITNESS",
+  "scope": "automation,test",
+  "head": "7aeaeca3cb7d9a2c569ee0860a497a8a03c15cb1",
+  "baselineAt": "2026-09-15T22:31:37.835Z",
+  "verdict": "NOT_PROVEN",
+  "reason": "BEFORE_ALSO_PASSES",
+  "repeat": 2,
+  "timeoutMs": 15000,
+  "tests": [
+    "test/unrelated.test.cjs"
+  ],
+  "changed": [
+    "automation/lib/layer1-dashboard-data.js",
+    "test/layer1-dashboard-read-api.test.js",
+    "test/layer1-dashboard-runs.test.js",
+    "test/layer1-snapshot.test.js"
+  ],
+  "witnessedChanges": [
+    "automation/lib/layer1-dashboard-data.js",
+    "test/layer1-dashboard-read-api.test.js",
+    "test/layer1-dashboard-runs.test.js",
+    "test/layer1-snapshot.test.js"
+  ],
+  "transplanted": [
+    "test/unrelated.test.cjs"
+  ],
+  "before": [
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 112.57539999999995,
+      "preparationMs": 14.0779,
+      "verificationMs": 1.9718000000000302,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "2684a996c62b585989a2358224b0939e29d6bd1e2e4d71aec49e3f1833eb1482",
+      "commandFingerprint": "ded7744bf75b77375517c9f9fac6a825c43ee7c402a4932d3aa1a451a61903cf",
+      "cwdFingerprint": "5ff10199c4507ea355ab1ef7ca136fa0d6a66d74be83fd3881618975d93301e3",
+      "tests": [
+        {
+          "id": "test/unrelated.test.cjs :: 4809f251ffa5c8420ef03db4dac0eed7c4d60054136adf311904fc30d80fc84f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 108.12760000000003,
+      "preparationMs": 11.087599999999838,
+      "verificationMs": 2.029800000000023,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "2684a996c62b585989a2358224b0939e29d6bd1e2e4d71aec49e3f1833eb1482",
+      "commandFingerprint": "ded7744bf75b77375517c9f9fac6a825c43ee7c402a4932d3aa1a451a61903cf",
+      "cwdFingerprint": "5ff10199c4507ea355ab1ef7ca136fa0d6a66d74be83fd3881618975d93301e3",
+      "tests": [
+        {
+          "id": "test/unrelated.test.cjs :: 4809f251ffa5c8420ef03db4dac0eed7c4d60054136adf311904fc30d80fc84f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "after": [
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 94.16880000000003,
+      "preparationMs": 12.64829999999995,
+      "verificationMs": 1.993600000000015,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "2684a996c62b585989a2358224b0939e29d6bd1e2e4d71aec49e3f1833eb1482",
+      "commandFingerprint": "ded7744bf75b77375517c9f9fac6a825c43ee7c402a4932d3aa1a451a61903cf",
+      "cwdFingerprint": "5ff10199c4507ea355ab1ef7ca136fa0d6a66d74be83fd3881618975d93301e3",
+      "tests": [
+        {
+          "id": "test/unrelated.test.cjs :: 4809f251ffa5c8420ef03db4dac0eed7c4d60054136adf311904fc30d80fc84f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 99.5827999999999,
+      "preparationMs": 12.388799999999947,
+      "verificationMs": 2.027499999999918,
+      "outcome": "PASS",
+      "passed": true,
+      "infrastructureFailure": false,
+      "reasons": [],
+      "environmentFingerprint": "2684a996c62b585989a2358224b0939e29d6bd1e2e4d71aec49e3f1833eb1482",
+      "commandFingerprint": "ded7744bf75b77375517c9f9fac6a825c43ee7c402a4932d3aa1a451a61903cf",
+      "cwdFingerprint": "5ff10199c4507ea355ab1ef7ca136fa0d6a66d74be83fd3881618975d93301e3",
+      "tests": [
+        {
+          "id": "test/unrelated.test.cjs :: 4809f251ffa5c8420ef03db4dac0eed7c4d60054136adf311904fc30d80fc84f",
+          "passed": true,
+          "skip": false,
+          "todo": false
+        }
+      ],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "environment": {
+    "state": "EXISTING_ENV",
+    "kind": "NODE_BUILTINS_ONLY",
+    "manifestHashes": {},
+    "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 0,
+    "count": 0,
+    "reasons": [],
+    "runtime": {
+      "node": "v24.15.0",
+      "platform": "win32",
+      "arch": "x64",
+      "nodeSha256": "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+      "reporterSha256": "47d2b2b4178bb574d01c419f52faa3f0f0d32b0f535e85b5300e24daa1a5c201"
+    },
+    "policy": "ALLOWLIST_NO_PARENT_TEST_CONTEXT_OR_LOADERS",
+    "cwd": "SAME_ABSOLUTE_SANDBOX_PATH_EVERY_RUN",
+    "lockfileSame": true,
+    "dependencySame": true,
+    "commandSame": true,
+    "command": [
+      "node",
+      "--test",
+      "--test-isolation=none",
+      "--test-concurrency=1",
+      "--test-timeout=15000",
+      "--test-reporter=<timewitness-reporter-file-url>",
+      "./test/unrelated.test.cjs"
+    ],
+    "fingerprint": "2684a996c62b585989a2358224b0939e29d6bd1e2e4d71aec49e3f1833eb1482",
+    "commandFingerprint": "ded7744bf75b77375517c9f9fac6a825c43ee7c402a4932d3aa1a451a61903cf",
+    "cwdFingerprint": "5ff10199c4507ea355ab1ef7ca136fa0d6a66d74be83fd3881618975d93301e3",
+    "testBytes": {
+      "test/unrelated.test.cjs": "31b4ccd85241be06f715d41b43b7d843bf37087ccb1b395d0aa0f76c98add042"
+    }
+  },
+  "safety": {
+    "gitStateUnchanged": true,
+    "capturedSourceUnchanged": true,
+    "dependencyUnchanged": true,
+    "runtimeUnchanged": true
+  },
+  "timings": {
+    "archivalMs": 5.103199999999902,
+    "armMs": 438.0373000000001,
+    "sandboxPreparationMs": 50.202599999999734,
+    "beforeTestMs": 220.70299999999997,
+    "afterTestMs": 193.75159999999994,
+    "inputVerificationMs": 8.022699999999986,
+    "cleanupMs": 0,
+    "cleanupPolicy": "RETAIN_NO_DELETION",
+    "proveMs": 1540.2598,
+    "overheadMs": 1125.8052000000002
+  },
+  "privacy": {
+    "rawLogsSaved": false,
+    "testNames": "HMAC",
+    "environmentValuesSaved": false,
+    "sourceInReport": false,
+    "snapshots": "PRIVATE_LOCAL_SOURCE_COPIES_RETAINED",
+    "networkByTimewitness": false
+  },
+  "evidencePath": "runs/2026-09-15T22-32-00-218Z-a6e5879c/report.json",
+  "currentHashes": {
+    "automation/lib/layer1-dashboard-data.js": {
+      "sha256": "06afdea6dd01ae508c157b9e4d2847d6f63d4f2b3c06031049900592b34fcde1",
+      "mode": 438
+    },
+    "automation/lib/layer1-dashboard-state.js": {
+      "sha256": "4537aabcca18fc905845d98cd2d06cb3dfdf468d010b2f5abf4dcd186f605874",
+      "mode": 438
+    },
+    "automation/lib/layer1-history-identity.js": {
+      "sha256": "8fabe40fe613b5c6ec01dcfeb64a1697a407c1227308962f6a3f2c254b30a210",
+      "mode": 438
+    },
+    "automation/lib/layer1-history-store.js": {
+      "sha256": "15243389c3e5bd8c5b4a352169fa86c2fb130febaeeddb1a393c19b1d393d212",
+      "mode": 438
+    },
+    "automation/lib/layer1-phase2-hash.js": {
+      "sha256": "728c3db0299c86b7667dcb12b3a3c4e56e27d7b5b7916da68b0a1bf48c8b8251",
+      "mode": 438
+    },
+    "automation/lib/layer1-snapshot.js": {
+      "sha256": "0bde3ac3fa115b4861b2b8b162cd896b7abd9241bee7a8da80b1bf9c10a596c5",
+      "mode": 438
+    },
+    "test/layer1-dashboard-fixtures.js": {
+      "sha256": "76673d9b4823b81ec1383082ad69b7f1009ead108af2f60599247d1c82ea5e3b",
+      "mode": 438
+    },
+    "test/layer1-dashboard-read-api.test.js": {
+      "sha256": "fcad7489ecd9bb5df80987000b48f01a05c5c12e651dd20f7e4bc4ca935c92fb",
+      "mode": 438
+    },
+    "test/layer1-dashboard-runs.test.js": {
+      "sha256": "e7bfef27b8170ac9cf18b7a75561da7e2edbcfcaabaf9426130c4204a0fe5f11",
+      "mode": 438
+    },
+    "test/layer1-snapshot.test.js": {
+      "sha256": "01e514fba3c2ad2e22f2adc805b4d1d61e75f8e4fbf9374e02870f078eb89124",
+      "mode": 438
+    },
+    "test/unrelated.test.cjs": {
+      "sha256": "31b4ccd85241be06f715d41b43b7d843bf37087ccb1b395d0aa0f76c98add042",
+      "mode": 438
+    }
+  },
+  "omitted": []
+}

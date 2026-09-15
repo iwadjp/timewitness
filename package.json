@@ -1,0 +1,8 @@
+{
+  "name": "timewitness",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prove that a regression test fails in the dirty past and passes after a fix.",
+  "scripts": { "test": "node --test test/*.test.cjs" },
+  "engines": { "node": ">=24" }
+}

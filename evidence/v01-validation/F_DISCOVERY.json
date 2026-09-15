@@ -1,0 +1,213 @@
+{
+  "version": 2,
+  "runId": "2026-09-15T09-53-30-878Z-24b53c09",
+  "baselineId": "2026-09-15T09-53-30-712Z-12b35836",
+  "createdAt": "2026-09-15T09:53:30.879Z",
+  "mode": "FULL_WITNESS",
+  "scope": ".",
+  "head": null,
+  "baselineAt": "2026-09-15T09:53:30.712Z",
+  "verdict": "INCONCLUSIVE",
+  "reason": "EXECUTION_INCONCLUSIVE",
+  "repeat": 2,
+  "timeoutMs": 15000,
+  "tests": [
+    "value.test.cjs"
+  ],
+  "changed": [
+    "another.txt",
+    "lib.cjs",
+    "value.test.cjs"
+  ],
+  "witnessedChanges": [
+    "another.txt",
+    "lib.cjs"
+  ],
+  "transplanted": [
+    "value.test.cjs"
+  ],
+  "before": [
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 96.39240000000063,
+      "preparationMs": 4.604900000000271,
+      "verificationMs": 1.3245999999999185,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "NO_TESTS_DISCOVERED",
+        "FILE_WITHOUT_EXPLICIT_TEST"
+      ],
+      "environmentFingerprint": "b3fba00388821e61023f2b44057b380ec8246acfc2681de458841a26322a3e74",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "b62d11747d135afa823e61f2767406e82380ea8dbf9874367a4562dcabf4ebf7",
+      "tests": [],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 91.89739999999983,
+      "preparationMs": 4.381500000001324,
+      "verificationMs": 1.1144999999996799,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "NO_TESTS_DISCOVERED",
+        "FILE_WITHOUT_EXPLICIT_TEST"
+      ],
+      "environmentFingerprint": "b3fba00388821e61023f2b44057b380ec8246acfc2681de458841a26322a3e74",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "b62d11747d135afa823e61f2767406e82380ea8dbf9874367a4562dcabf4ebf7",
+      "tests": [],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "after": [
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 98.38720000000103,
+      "preparationMs": 4.626000000000204,
+      "verificationMs": 1.8431000000000495,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "NO_TESTS_DISCOVERED",
+        "FILE_WITHOUT_EXPLICIT_TEST"
+      ],
+      "environmentFingerprint": "b3fba00388821e61023f2b44057b380ec8246acfc2681de458841a26322a3e74",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "b62d11747d135afa823e61f2767406e82380ea8dbf9874367a4562dcabf4ebf7",
+      "tests": [],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 90.29069999999956,
+      "preparationMs": 4.308800000000701,
+      "verificationMs": 1.701600000000326,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "NO_TESTS_DISCOVERED",
+        "FILE_WITHOUT_EXPLICIT_TEST"
+      ],
+      "environmentFingerprint": "b3fba00388821e61023f2b44057b380ec8246acfc2681de458841a26322a3e74",
+      "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+      "cwdFingerprint": "b62d11747d135afa823e61f2767406e82380ea8dbf9874367a4562dcabf4ebf7",
+      "tests": [],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "environment": {
+    "state": "EXISTING_ENV",
+    "kind": "NODE_BUILTINS_ONLY",
+    "manifestHashes": {},
+    "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 0,
+    "count": 0,
+    "reasons": [],
+    "runtime": {
+      "node": "v24.15.0",
+      "platform": "win32",
+      "arch": "x64",
+      "nodeSha256": "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+      "reporterSha256": "47d2b2b4178bb574d01c419f52faa3f0f0d32b0f535e85b5300e24daa1a5c201"
+    },
+    "policy": "ALLOWLIST_NO_PARENT_TEST_CONTEXT_OR_LOADERS",
+    "cwd": "SAME_ABSOLUTE_SANDBOX_PATH_EVERY_RUN",
+    "lockfileSame": true,
+    "dependencySame": true,
+    "commandSame": true,
+    "command": [
+      "node",
+      "--test",
+      "--test-isolation=none",
+      "--test-concurrency=1",
+      "--test-timeout=15000",
+      "--test-reporter=<timewitness-reporter-file-url>",
+      "./value.test.cjs"
+    ],
+    "fingerprint": "b3fba00388821e61023f2b44057b380ec8246acfc2681de458841a26322a3e74",
+    "commandFingerprint": "b2db7c9e27b0270159d2285905ff3f2e67fa011e21b82ab5afa336510be188d0",
+    "cwdFingerprint": "b62d11747d135afa823e61f2767406e82380ea8dbf9874367a4562dcabf4ebf7",
+    "testBytes": {
+      "value.test.cjs": "f912323d85a0ec9f47604605651d1f725d5751d9d26e323f9f9b15c6b8fc6f48"
+    }
+  },
+  "safety": {
+    "gitStateUnchanged": true,
+    "capturedSourceUnchanged": true,
+    "dependencyUnchanged": true,
+    "runtimeUnchanged": true
+  },
+  "timings": {
+    "archivalMs": 4.703300000002855,
+    "armMs": 482.5681000000004,
+    "sandboxPreparationMs": 17.9212000000025,
+    "beforeTestMs": 188.28980000000047,
+    "afterTestMs": 188.6779000000006,
+    "inputVerificationMs": 5.983799999999974,
+    "cleanupMs": 0,
+    "cleanupPolicy": "RETAIN_NO_DELETION",
+    "proveMs": 1566.829600000001,
+    "overheadMs": 1189.8618999999999,
+    "reportWriteMs": 2.6375000000007276,
+    "totalMs": 1569.4732999999997
+  },
+  "privacy": {
+    "rawLogsSaved": false,
+    "testNames": "HMAC",
+    "environmentValuesSaved": false,
+    "sourceInReport": false,
+    "snapshots": "PRIVATE_LOCAL_SOURCE_COPIES_RETAINED",
+    "networkByTimewitness": false
+  },
+  "evidencePath": "runs/2026-09-15T09-53-30-878Z-24b53c09/report.json",
+  "currentHashes": {
+    "another.txt": {
+      "sha256": "61178797452155f10913861587fcc348813ba3cf7f4c7bc91715d150c02eebf1",
+      "mode": 438
+    },
+    "lib.cjs": {
+      "sha256": "44e0c9e7ead985db9872e03b59c7fe0b6dc14165cf0d9c5d6d72ed4dac4b5f32",
+      "mode": 438
+    },
+    "unrelated.txt": {
+      "sha256": "cbcc1b67854c29bd70c93ca838383356c04fd68df494dec8f2f857556fbb83fe",
+      "mode": 438
+    },
+    "value.test.cjs": {
+      "sha256": "f912323d85a0ec9f47604605651d1f725d5751d9d26e323f9f9b15c6b8fc6f48",
+      "mode": 438
+    }
+  },
+  "omitted": []
+}

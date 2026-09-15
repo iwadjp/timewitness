@@ -1,0 +1,217 @@
+{
+  "version": 2,
+  "runId": "2026-09-15T09-53-26-539Z-bc34312e",
+  "baselineId": "2026-09-15T09-53-26-382Z-49e0a79c",
+  "createdAt": "2026-09-15T09:53:26.540Z",
+  "mode": "FULL_WITNESS",
+  "scope": ".",
+  "head": null,
+  "baselineAt": "2026-09-15T09:53:26.382Z",
+  "verdict": "INCONCLUSIVE",
+  "reason": "EXECUTION_INCONCLUSIVE",
+  "repeat": 2,
+  "timeoutMs": 100,
+  "tests": [
+    "value.test.cjs"
+  ],
+  "changed": [
+    "another.txt",
+    "lib.cjs",
+    "value.test.cjs"
+  ],
+  "witnessedChanges": [
+    "another.txt",
+    "lib.cjs"
+  ],
+  "transplanted": [
+    "value.test.cjs"
+  ],
+  "before": [
+    {
+      "exitCode": null,
+      "signal": "SIGKILL",
+      "durationMs": 616.8925999999992,
+      "preparationMs": 4.515299999999115,
+      "verificationMs": 1.2454999999990832,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "TIMEOUT",
+        "INCOMPLETE_TEST_REPORT",
+        "NO_TESTS_DISCOVERED"
+      ],
+      "environmentFingerprint": "5a98fc03c55a7cc95fee37dc02f6c0c1fc91b20384dfec5f4b5a1dd49f15e437",
+      "commandFingerprint": "9c5a8d112cbd10b2ca0adb7cc85830cc197153715c0c372e3b46097fea36a15b",
+      "cwdFingerprint": "18364174bc2f1ebc0c50e71d45b3708c4d3d75a120a512d8f0172075c1f042a3",
+      "tests": [],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": null,
+      "signal": "SIGKILL",
+      "durationMs": 607.4933000000001,
+      "preparationMs": 4.187099999999191,
+      "verificationMs": 1.3157000000010157,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "TIMEOUT",
+        "INCOMPLETE_TEST_REPORT",
+        "NO_TESTS_DISCOVERED"
+      ],
+      "environmentFingerprint": "5a98fc03c55a7cc95fee37dc02f6c0c1fc91b20384dfec5f4b5a1dd49f15e437",
+      "commandFingerprint": "9c5a8d112cbd10b2ca0adb7cc85830cc197153715c0c372e3b46097fea36a15b",
+      "cwdFingerprint": "18364174bc2f1ebc0c50e71d45b3708c4d3d75a120a512d8f0172075c1f042a3",
+      "tests": [],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "after": [
+    {
+      "exitCode": null,
+      "signal": "SIGKILL",
+      "durationMs": 608.8527000000013,
+      "preparationMs": 4.919200000000274,
+      "verificationMs": 2.5023000000001048,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "TIMEOUT",
+        "INCOMPLETE_TEST_REPORT",
+        "NO_TESTS_DISCOVERED"
+      ],
+      "environmentFingerprint": "5a98fc03c55a7cc95fee37dc02f6c0c1fc91b20384dfec5f4b5a1dd49f15e437",
+      "commandFingerprint": "9c5a8d112cbd10b2ca0adb7cc85830cc197153715c0c372e3b46097fea36a15b",
+      "cwdFingerprint": "18364174bc2f1ebc0c50e71d45b3708c4d3d75a120a512d8f0172075c1f042a3",
+      "tests": [],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    },
+    {
+      "exitCode": null,
+      "signal": "SIGKILL",
+      "durationMs": 608.2441999999992,
+      "preparationMs": 4.6247999999995955,
+      "verificationMs": 2.0756000000001222,
+      "outcome": "INCONCLUSIVE",
+      "passed": false,
+      "infrastructureFailure": true,
+      "reasons": [
+        "TIMEOUT",
+        "INCOMPLETE_TEST_REPORT",
+        "NO_TESTS_DISCOVERED"
+      ],
+      "environmentFingerprint": "5a98fc03c55a7cc95fee37dc02f6c0c1fc91b20384dfec5f4b5a1dd49f15e437",
+      "commandFingerprint": "9c5a8d112cbd10b2ca0adb7cc85830cc197153715c0c372e3b46097fea36a15b",
+      "cwdFingerprint": "18364174bc2f1ebc0c50e71d45b3708c4d3d75a120a512d8f0172075c1f042a3",
+      "tests": [],
+      "assertions": [],
+      "output": {
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "rawSaved": false
+      }
+    }
+  ],
+  "environment": {
+    "state": "EXISTING_ENV",
+    "kind": "NODE_BUILTINS_ONLY",
+    "manifestHashes": {},
+    "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 0,
+    "count": 0,
+    "reasons": [],
+    "runtime": {
+      "node": "v24.15.0",
+      "platform": "win32",
+      "arch": "x64",
+      "nodeSha256": "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+      "reporterSha256": "47d2b2b4178bb574d01c419f52faa3f0f0d32b0f535e85b5300e24daa1a5c201"
+    },
+    "policy": "ALLOWLIST_NO_PARENT_TEST_CONTEXT_OR_LOADERS",
+    "cwd": "SAME_ABSOLUTE_SANDBOX_PATH_EVERY_RUN",
+    "lockfileSame": true,
+    "dependencySame": true,
+    "commandSame": true,
+    "command": [
+      "node",
+      "--test",
+      "--test-isolation=none",
+      "--test-concurrency=1",
+      "--test-timeout=100",
+      "--test-reporter=<timewitness-reporter-file-url>",
+      "./value.test.cjs"
+    ],
+    "fingerprint": "5a98fc03c55a7cc95fee37dc02f6c0c1fc91b20384dfec5f4b5a1dd49f15e437",
+    "commandFingerprint": "9c5a8d112cbd10b2ca0adb7cc85830cc197153715c0c372e3b46097fea36a15b",
+    "cwdFingerprint": "18364174bc2f1ebc0c50e71d45b3708c4d3d75a120a512d8f0172075c1f042a3",
+    "testBytes": {
+      "value.test.cjs": "9dacf9725d3809c137a648d21559032a3d3f8d41c347da2108d0cbda4381618a"
+    }
+  },
+  "safety": {
+    "gitStateUnchanged": true,
+    "capturedSourceUnchanged": true,
+    "dependencyUnchanged": true,
+    "runtimeUnchanged": true
+  },
+  "timings": {
+    "archivalMs": 4.630299999998897,
+    "armMs": 498.2441999999992,
+    "sandboxPreparationMs": 18.246399999998175,
+    "beforeTestMs": 1224.3858999999993,
+    "afterTestMs": 1217.0969000000005,
+    "inputVerificationMs": 7.139100000000326,
+    "cleanupMs": 0,
+    "cleanupPolicy": "RETAIN_NO_DELETION",
+    "proveMs": 3620.7349000000013,
+    "overheadMs": 1179.2521000000015,
+    "reportWriteMs": 2.6195999999999913,
+    "totalMs": 3623.358900000001
+  },
+  "privacy": {
+    "rawLogsSaved": false,
+    "testNames": "HMAC",
+    "environmentValuesSaved": false,
+    "sourceInReport": false,
+    "snapshots": "PRIVATE_LOCAL_SOURCE_COPIES_RETAINED",
+    "networkByTimewitness": false
+  },
+  "evidencePath": "runs/2026-09-15T09-53-26-539Z-bc34312e/report.json",
+  "currentHashes": {
+    "another.txt": {
+      "sha256": "61178797452155f10913861587fcc348813ba3cf7f4c7bc91715d150c02eebf1",
+      "mode": 438
+    },
+    "lib.cjs": {
+      "sha256": "44e0c9e7ead985db9872e03b59c7fe0b6dc14165cf0d9c5d6d72ed4dac4b5f32",
+      "mode": 438
+    },
+    "unrelated.txt": {
+      "sha256": "cbcc1b67854c29bd70c93ca838383356c04fd68df494dec8f2f857556fbb83fe",
+      "mode": 438
+    },
+    "value.test.cjs": {
+      "sha256": "9dacf9725d3809c137a648d21559032a3d3f8d41c347da2108d0cbda4381618a",
+      "mode": 438
+    }
+  },
+  "omitted": []
+}
