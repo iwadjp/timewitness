@@ -227,3 +227,18 @@ nested repo/worktree境界、hook/setup失敗、dependency差、flakiness、priv
 第一対象はWindows / Git / Node.js 24 / node:test。別ecosystemや一般のnpm scripts、ブラウザ、
 外部service、OS隔離、完全な原子的snapshot、保存容量の自動管理は対象外です。
 詳細な証拠は `evidence/v01-validation/` と `evidence/real-bug-d290a13/` を参照してください。
+
+## Related tools
+
+This project is part of a small set of tools for investigating AI-coding and
+debugging problems that Git alone cannot explain.
+
+- [Timewitness](https://github.com/iwadjp/timewitness) — check whether a regression test fails before a fix and passes after it.
+- [wipwho](https://github.com/iwadjp/wipwho) — split mixed uncommitted Claude/Codex changes into request-level patches.
+- [Ember](https://github.com/iwadjp/ember) — recover source retained by a still-running Node.js process.
+- [Worldbisect](https://github.com/iwadjp/worldbisect) — reduce same-commit environment differences to an observed 1-minimal reproducing set.
+- [Afterimage](https://github.com/iwadjp/afterimage) — inspect retained NTFS USN history after an agent run.
+
+[Overview and articles](https://blog2020.iwadjp.com/2026/09/18/ai-coding-debugging-tools-portfolio/)
+
+**Article:** [AIが書いたregression test、本当にbugを検出している？ Timewitnessでfix前後を確かめる](https://blog2020.iwadjp.com/2026/09/16/timewitness-regression-test-proof-dirty-tree/)
