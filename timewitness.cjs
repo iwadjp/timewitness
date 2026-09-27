@@ -77,6 +77,12 @@ function main(argv) {
 }
 if (require.main === module) {
   try { main(process.argv.slice(2)); }
-  catch { process.stderr.write('Timewitness: operation could not complete. Check --help, repository/scope, baseline and local storage.\n'); process.exitCode = 1; }
+  catch (error) {
+    // Timewitness's own errors are actionable and path-free; fs/Git errors (code/status) may contain local paths.
+    const own = error instanceof Error && error.code === undefined && error.status === undefined;
+    process.stderr.write('Timewitness: ' + (own ? error.message
+      : 'operation could not complete. Check --help, repository/scope, baseline and local storage.') + '\n');
+    process.exitCode = 1;
+  }
 }
 module.exports = { main };
