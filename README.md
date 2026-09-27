@@ -1,5 +1,155 @@
 # Timewitness
 
+[English](#english) | [日本語](#日本語)
+
+## English
+
+Timewitness checks that a newly added regression test **fails before the fix
+and passes after it**, by actually running the test against the pre-fix code —
+straight from a dirty working tree, without commits, stashes or a clean base.
+
+### Why
+
+When an AI coding assistant writes a fix and its regression test together,
+"the test passes on the current tree" is not evidence that the test would have
+failed without the fix. Checking that by hand means reverting commits, setting
+up another working copy, or asking follow-up questions about which change was
+needed — and in a dirty working tree, Git's `HEAD` is not necessarily the
+"before" state either.
+
+Timewitness snapshots your working files before you edit (`arm`), then runs the
+current test against that snapshot and against the current tree (`prove`).
+
+### Try it
+
+Requires Windows, Git and Node.js 24 or later. No clone is needed:
+
+```powershell
+cd <your-repo>
+npx github:iwadjp/timewitness arm
+
+# fix the bug and add a regression test as usual
+
+npx github:iwadjp/timewitness prove --test test/foo.test.js
+```
+
+```text
+TIMEWITNESS: PROVEN
+
+Before: FAIL 2/2
+After : PASS 2/2
+
+Witnessed changes (whole set):
+- lib/foo.cjs
+Test: test/foo.test.js
+Environment: EXISTING_ENV / same manifests / same command / same cwd
+Reason: REPEATED_ASSERTION_FAIL_TO_PASS
+Evidence: runs/<run-id>/report.json
+```
+
+To run from a clone instead:
+
+```powershell
+git clone https://github.com/iwadjp/timewitness.git
+node timewitness\timewitness.cjs arm --repo <your-repo>
+```
+
+`--repo` defaults to the current directory. `node timewitness.cjs --help`
+(or `npx github:iwadjp/timewitness --help`) prints all options.
+
+### Verdicts
+
+| Verdict | Meaning | Exit code |
+|---|---|---|
+| PROVEN | Same test, command, cwd, environment and dependency copy; the same assertion failure turns into a pass, consistently across every repetition | 0 |
+| NOT_PROVEN | The test also passes before, still fails after, the test set/command/cwd differs, or there is no comparable difference or evidence | 2 |
+| INCONCLUSIVE | skip/todo, timeout, discovery/setup failure, dependency or environment difference, flaky results, not reproducible, or files changed during capture | 3 |
+| Usage error | Bad arguments, no baseline, repository/storage not usable | 1 |
+
+**PROVEN does not mean** the whole fix is correct, that test coverage is
+sufficient, or that the bug is fully fixed. It is limited evidence that *this
+selected test*, when executed, tells the saved "before" world apart from the
+current one.
+
+### How the dirty tree is handled
+
+- No committed base ref is needed. Timewitness never commits or stashes.
+- The "before" state is **the working files at `arm` time** — not the index and
+  not `HEAD`.
+- Your Git working tree is only read: no reset, checkout, restore, stage or
+  commit.
+- `--repeat` (default 2, range 1–10) runs each side several times; mixed results
+  are INCONCLUSIVE.
+- Environment, command, cwd and the `node_modules` bytes are compared between
+  `arm` and `prove`; any difference prevents PROVEN.
+
+### Checked against a real bug fix
+
+Run against a real commit from another of the author's projects
+(`d290a13 "Fix latest Layer 1 run selection"`, reduced to the affected source
+and tests — see [`evidence/real-bug-d290a13/NOTES.md`](evidence/real-bug-d290a13/NOTES.md)),
+Timewitness returned `PROVEN` (Before: FAIL 3/3, After: PASS 3/3). A synthetic
+negative control unrelated to the fix (`assert.equal(1 + 1, 2)`) in the same
+environment returned `NOT_PROVEN` with `BEFORE_ALSO_PASSES`. Neither run produced
+a false PROVEN. The raw reports are in the same directory.
+
+### Supported scope (v0.1)
+
+- Windows, Git, Node.js 24+; `node:test` only.
+- Staged, unstaged and untracked changes are all captured as the actual bytes
+  on disk at `arm` time. Ignored files inside the scope are not captured; `prove`
+  reports them as a reason for INCONCLUSIVE.
+- `--scope` (repeatable) limits capture to repo-relative directories, e.g.
+  separate source and test directories. Dependency reproduction is always
+  checked at the Git root.
+- `--test` (repeatable) names the tests to run; otherwise new or changed
+  `*.test.*` / `*.spec.*` files are selected.
+- `--repeat` 1–10 (default 2), `--timeout-ms` 50–600000 (default 15000).
+
+### Limitations
+
+- A single root `package.json` only; npm/pnpm/yarn workspaces are not supported.
+- Dependencies are reproduced by checking that the existing `node_modules` is
+  byte-identical; nothing is installed from a lockfile.
+- pnpm/yarn lockfiles, nested packages, dependency symlinks/junctions and native
+  `.node` modules are reported as `ENVIRONMENT_NOT_REPRODUCED`.
+- Large dependency trees (over 128 MiB / 12,000 files) and large sources (over
+  64 MiB / 2,000 files) are not partially proven.
+- Browser projects, build steps and general npm scripts are out of scope, as are
+  hidden dependencies on files outside the scope.
+
+### Safety and privacy
+
+- Your working tree is never modified; before/after run in separate copies.
+- Source copies are kept, **unencrypted**, under
+  `%LOCALAPPDATA%\Timewitness\v01\<repo-scope-key>` and are not cleaned up
+  automatically. Do not share that directory if your source is sensitive.
+- Timewitness itself makes no network connections. Test names are matched by
+  HMAC, and raw stdout/stderr are never saved.
+- The copies are **not an OS security sandbox**: a test that writes to external
+  paths, services or the network can still do so. Only run trusted tests.
+
+### Tests
+
+```powershell
+npm test
+```
+
+49 tests cover path edge cases, staged/mixed/index handling, binary files, line
+endings, file modes, nested repositories and worktrees, hook/setup failures,
+dependency differences, flakiness, privacy, and more. Validation evidence is in
+`evidence/v01-validation/` and `evidence/real-bug-d290a13/`. The detailed notes
+below (in Japanese) cover FULL_WITNESS, capture details, dependency handling,
+the exact command that is executed, and false-PROVEN safeguards.
+
+**Article (English):** [When AI writes the fix and the test together, is PASS enough?](https://dev.to/iwadjp/when-ai-writes-the-fix-and-the-test-together-is-pass-enough-1n2p)
+
+License: [PolyForm Noncommercial 1.0.0](LICENSE).
+
+---
+
+## 日本語
+
 新しく追加した回帰テストが、fix前ではFAILしfix後ではPASSすることを、**dirty working treeのまま**実行して確かめます。
 
 ## Why
@@ -141,6 +291,8 @@ node timewitness.cjs arm --repo <対象repoのpath>
 ```
 
 `--repo`を省略すると現在のdirectoryが対象repoになります。global installやnpm publishは行いません。
+
+cloneせずに試す場合は、対象repoで `npx github:iwadjp/timewitness arm` / `npx github:iwadjp/timewitness prove --test <test>` のように実行できます（Node 24以上）。
 
 ## 詳細ドキュメント
 
