@@ -18,12 +18,22 @@ test('CLI usage errors name the cause instead of one generic message', () => {
 
   const noBaseline = run(root, ['prove'], env);
   a.equal(noBaseline.status, 1);
-  a.match(noBaseline.stderr, /No armed v0\.1 baseline for this repo\/scope\. Run arm first\./);
+  a.match(noBaseline.stderr, /No armed v0\.1 baseline for this repo\/scope\./);
+  const hint = /Scope defaults to the current directory/;
+  a.match(noBaseline.stderr, hint);
 
-  a.equal(run(root, ['arm'], env).status, 0);
+  const armed = run(root, ['arm'], env);
+  a.equal(armed.status, 0);
+  a.doesNotMatch(armed.stdout + armed.stderr, hint);
   const fromSubdir = run(path.join(root, 'lib'), ['prove'], env);
   a.equal(fromSubdir.status, 1);
   a.match(fromSubdir.stderr, /No armed v0\.1 baseline/);
+  a.match(fromSubdir.stderr, hint);
+  a.ok(!fromSubdir.stderr.includes(root), 'hint must not print the local path');
+  const showSubdir = run(path.join(root, 'lib'), ['show'], env);
+  a.equal(showSubdir.status, 1);
+  a.match(showSubdir.stderr, /No completed experiment/);
+  a.match(showSubdir.stderr, hint);
 
   a.match(run(root, ['prove', '--repeat', '0'], env).stderr, /Option outside supported range/);
   a.match(run(root, ['arm', '--test', 'x'], env).stderr, /Test options require prove/);
@@ -31,5 +41,6 @@ test('CLI usage errors name the cause instead of one generic message', () => {
   const system = run(root, ['prove', '--repo', path.join(root, 'missing')], env);
   a.equal(system.status, 1);
   a.match(system.stderr, /operation could not complete/);
+  a.doesNotMatch(system.stderr, hint);
   a.ok(!system.stderr.includes(root), 'system errors must not print local paths');
 });

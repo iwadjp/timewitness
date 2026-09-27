@@ -34,7 +34,8 @@ function arm(ctx) {
 function latest(ctx) {
   const folder = path.join(ctx.home, 'sessions');
   const names = fs.existsSync(folder) ? fs.readdirSync(folder).filter(n => n.endsWith('.json')).sort() : [];
-  if (!names.length) throw new Error('No armed v0.1 baseline for this repo/scope. Run arm first.');
+  if (!names.length) throw new Error('No armed v0.1 baseline for this repo/scope.\n'
+    + 'Scope defaults to the current directory (or --scope). Run arm here, or run from the directory where you armed.');
   const session = JSON.parse(fs.readFileSync(path.join(folder, names.at(-1)), 'utf8'));
   if (session.version !== 2) throw new Error('Baseline format changed. Run arm again.');
   return session;
@@ -179,7 +180,8 @@ function latestReport(ctx) {
   const root = path.join(ctx.home, 'runs');
   const names = fs.existsSync(root) ? fs.readdirSync(root).sort().reverse() : [];
   const name = names.find(n => fs.existsSync(path.join(root, n, 'report.json')));
-  if (!name) throw new Error('No completed experiment. Run prove first.');
+  if (!name) throw new Error('No completed experiment for this repo/scope.\n'
+    + 'Scope defaults to the current directory (or --scope). Run prove here, or run from the directory where you ran prove.');
   return JSON.parse(fs.readFileSync(path.join(root, name, 'report.json'), 'utf8'));
 }
 function freshness(ctx, report) {
