@@ -56,7 +56,11 @@ function runWorld(folder, files, tests, options = {}) {
   const id = e => e.file + ' :: ' + crypto.createHmac('sha256', options.key || 'standalone').update(String(e.name)).digest('hex');
   const assertion = e => e.type === 'test:fail' && e.code === 'ERR_ASSERTION' && e.failureType === 'testCodeFailure';
   const assertions = leaves.filter(assertion);
+  // Selected entry files are transplanted, but imported files can define tests
+  // too. Matching paths/names alone must not equate different assertion code.
+  const testSources = [...new Set(leaves.map(e => e.file))].sort();
   const reasons = [];
+  if (testSources.some(name => !files[name])) reasons.push('TEST_SOURCE_NOT_CAPTURED');
   if (result.error) reasons.push(result.error.code === 'ETIMEDOUT' ? 'TIMEOUT' : 'RUNNER_ERROR');
   if (parseError) reasons.push('REPORTER_PROTOCOL_ERROR');
   if (!events.some(e => e.type === 'test:summary' && e.file === '')) reasons.push('INCOMPLETE_TEST_REPORT');
@@ -84,6 +88,7 @@ function runWorld(folder, files, tests, options = {}) {
     outcome: infrastructureFailure ? 'INCONCLUSIVE' : result.status === 0 ? 'PASS' : 'FAIL',
     passed: !infrastructureFailure && result.status === 0 && executed.length > 0 && !outcomes.some(e => e.type === 'test:fail'),
     infrastructureFailure, reasons: [...new Set(reasons)], environmentFingerprint,
+    testSourceFingerprint: hash(JSON.stringify(testSources.map(name => [name, files[name]?.sha256]))),
     commandFingerprint: hash(JSON.stringify([process.execPath, ...args])),
     cwdFingerprint: hash(folder),
     tests: leaves.map(e => ({ id: id(e), passed: e.type === 'test:pass' && !e.skip && !e.todo, skip: !!e.skip, todo: !!e.todo })),
@@ -104,6 +109,8 @@ function classifyRuns(before, after) {
   for (const key of ['environmentFingerprint', 'commandFingerprint', 'cwdFingerprint']) {
     if (new Set(all.map(r => r[key])).size !== 1) return { verdict: key === 'environmentFingerprint' ? 'INCONCLUSIVE' : 'NOT_PROVEN', reason: 'EXECUTION_CONDITIONS_DIFFER' };
   }
+  if (new Set(all.map(r => r.testSourceFingerprint)).size !== 1)
+    return { verdict: 'INCONCLUSIVE', reason: 'TEST_SOURCE_DIFFERS' };
   if (all.some(r => new Set(r.tests.map(t => t.id)).size !== r.tests.length))
     return { verdict: 'INCONCLUSIVE', reason: 'AMBIGUOUS_TEST_IDENTITIES' };
   if (JSON.stringify(before[0].tests.map(t => t.id).sort()) !== JSON.stringify(after[0].tests.map(t => t.id).sort()))

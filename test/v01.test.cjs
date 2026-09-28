@@ -55,6 +55,43 @@ test('different discovered tests and setup errors cannot prove a patch', () => {
   const f = fixed(); f.put('value.test.cjs', testSource("const v=require('./lib.cjs').value;test(v===1?'old':'new',()=>a.equal(v,2));"));
   const r = tw.prove(f.ctx); a.equal(r.verdict, 'NOT_PROVEN'); a.equal(r.reason, 'TEST_DISCOVERY_DIFFERS');
 });
+
+for (const target of ['test/imported.test.cjs', 'test/imported cases.cjs']) {
+  test('changed assertions in imported test source cannot be PROVEN: ' + target, () => {
+    const f = fixture(), entry = 'entry with spaces.test.cjs';
+    f.put(entry, 'require(' + JSON.stringify('./' + target) + ');\n');
+    f.put(target, testSource("test('unchanged test name',()=>a.equal(1,2));"));
+    const baseline = tw.arm(f.ctx);
+    // No production fix: only replace the failing assertion with a passing one.
+    // The selected entry and the executed test's path/name are unchanged.
+    f.put(target, testSource("test('unchanged test name',()=>a.equal(1,1));"));
+    const captured = tw.snapshot(f.ctx), state = tw.guard(f.ctx);
+    const r = tw.prove(f.ctx, { tests: [entry], repeat: 2 });
+    a.equal(baseline.files[entry].sha256, captured.files[entry].sha256);
+    a.notEqual(baseline.files[target].sha256, captured.files[target].sha256);
+    a.deepEqual(r.before.map(x => x.outcome), ['FAIL', 'FAIL']);
+    a.deepEqual(r.after.map(x => x.outcome), ['PASS', 'PASS']);
+    a.deepEqual(r.before[0].tests.map(x => x.id), r.after[0].tests.map(x => x.id));
+    a.equal(r.verdict, 'INCONCLUSIVE', JSON.stringify({ verdict: r.verdict, reason: r.reason }));
+    a.equal(r.reason, 'TEST_SOURCE_DIFFERS');
+    a.notEqual(r.before[0].testSourceFingerprint, r.after[0].testSourceFingerprint);
+    a.equal(tw.latestReport(f.ctx).verdict, 'INCONCLUSIVE');
+    a.equal(tw.freshness(f.ctx, r).status, 'CURRENT');
+    a.deepEqual(tw.guard(f.ctx), state);
+    a.deepEqual(tw.diff(captured.files, tw.snapshot(f.ctx).files), []);
+  });
+}
+
+test('unchanged imported test source still proves a production fix', () => {
+  const f = fixture(), entry = 'entry with spaces.test.cjs';
+  f.put(entry, "require('./test/imported cases.cjs');\n");
+  f.put('test/imported cases.cjs', testSource("test('value',()=>a.equal(require('../lib.cjs').value,2));"));
+  tw.arm(f.ctx); f.put('lib.cjs', 'exports.value=2;\n');
+  const r = tw.prove(f.ctx, { tests: ['./' + entry], repeat: 2 });
+  a.equal(r.verdict, 'PROVEN', JSON.stringify({ verdict: r.verdict, reason: r.reason }));
+  a.deepEqual(r.witnessedChanges, ['lib.cjs']);
+  a.equal(new Set([...r.before, ...r.after].map(x => x.testSourceFingerprint)).size, 1);
+});
 test('an assertion in a failed suite setup is inconclusive', () => {
   const f = fixed(); f.put('value.test.cjs', testSource("describe('suite',()=>{a.equal(require('./lib.cjs').value,2);test('inside',()=>{});});"));
   a.equal(tw.prove(f.ctx).verdict, 'INCONCLUSIVE');
